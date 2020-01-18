@@ -1,0 +1,14 @@
+name: rapunzel
+channels:
+- conda-forge
+- anaconda
+- cogsci
+- defaults
+dependencies:
+- python=3.7
+- conda
+- rapunzel
+- psychopy
+- opensesame-extension-osweb
+# - opensesame-extension-osf
+- opensesame-plugin-psychopy

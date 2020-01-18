@@ -1,0 +1,21 @@
+conda env remove -n rapunzel && ^
+conda env create -f env\rapunzel-env.yaml && ^
+conda activate rapunzel && ^
+conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
+pip install soundfile && ^
+pip install --no-deps --upgrade --force ^
+  pygame ^
+  http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl ^
+  python-qtpip && ^
+copy bat\rapunzel.bat {env_folder} && ^
+copy bat\opensesame.bat {env_folder} && ^
+copy bat\opensesamerun.bat {env_folder} && ^
+copy bat\ipython.bat {env_folder} && ^
+copy bat\qtconsole.bat {env_folder} && ^
+copy bat\psychopy.bat {env_folder} && ^
+copy py\opensesame.py {env_folder}Lib\site-packages\ && ^
+copy py\opensesamerun.py {env_folder}Lib\site-packages\ && ^
+copy /Y misc\qt-root.conf {env_folder}qt.conf && ^
+copy /Y misc\qt-library.conf {env_folder}Library\bin\qt.conf && ^
+copy /Y misc\kernel.json {env_folder}share\jupyter\kernels\python3\ && ^
+conda deactivate
