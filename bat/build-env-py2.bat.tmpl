@@ -1,0 +1,26 @@
+conda env remove -n rapunzel-py2 && ^
+conda env create -f env\rapunzel-env-py2.yaml && ^
+conda activate rapunzel-py2 && ^
+conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
+pip install pyglet==1.3.0 configobj json_tricks soundfile python-qosf --upgrade && ^
+pip install --no-deps --upgrade --force ^
+  psychopy==1.85.3 ^
+  pygame ^
+  http://files.cogsci.nl/expyriment-0.9.1b2_11_gc100ee8-py2-none-any.whl ^
+  python-qtpip && ^
+copy bat\rapunzel.bat {env_folder}\ && ^
+copy bat\opensesame.bat {env_folder}\ && ^
+copy bat\opensesamerun.bat {env_folder}\ && ^
+copy bat\ipython.bat {env_folder}\ && ^
+copy bat\qtconsole.bat {env_folder}\ && ^
+copy ico\opensesame.ico {env_folder}\share\icons && ^
+copy ico\opensesamerun.ico {env_folder}\share\icons && ^
+copy ico\rapunzel.ico {env_folder}\share\icons && ^
+copy ico\qtconsole.ico {env_folder}\share\icons && ^
+copy ico\ipython.ico {env_folder}\share\icons && ^
+copy py\opensesame.py {env_folder}\Lib\site-packages\ && ^
+copy py\opensesamerun.py {env_folder}\Lib\site-packages\ && ^
+copy /Y misc\qt-root.conf {env_folder}\qt.conf && ^
+copy /Y misc\qt-library.conf {env_folder}\Library\bin\qt.conf && ^
+copy /Y misc\kernel.json {env_folder}\share\jupyter\kernels\python2\ && ^
+conda deactivate

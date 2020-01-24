@@ -1,15 +1,27 @@
 # coding=utf-8
 
 import os
+import sys
 import subprocess
 
-BAT_TMPL = r'bat\build-env.bat.tmpl'
-NSI_TMPL = r'nsi\py3.nsi.tmpl'
-ENV_FOLDER = r'C:\Users\MWP-88AE1DB184B9\Anaconda3\envs\rapunzel\\'
-MAKENSIS = r'..\nsis-3.05\makensis.exe'
-ZIP = r'C:\Program Files\7-Zip\7z.exe'
-VERSION = '3.3.0a54-py3-win64-2'
-ENV_TARGET = r'C:\Users\MWP-88AE1DB184B9\Anaconda3\envs\opensesame_{version}\\'
+CONDA_FOLDER = r'C:\Users\P279200\.conda'
+
+if '--py2' in sys.argv:
+    BAT_TMPL = r'bat\build-env-py2.bat.tmpl'
+    NSI_TMPL = r'nsi\py2.nsi.tmpl'
+    ENV_FOLDER = CONDA_FOLDER + r'\envs\rapunzel-py2\\'
+    MAKENSIS = r'..\nsis-3.05\makensis.exe'
+    ZIP = r'C:\Program Files\7-Zip\7z.exe'
+    VERSION = '3.3.0a56-py2-win64-1'
+    ENV_TARGET = CONDA_FOLDER + r'\envs\opensesame_{version}'
+else:
+    BAT_TMPL = r'bat\build-env.bat.tmpl'
+    NSI_TMPL = r'nsi\py3.nsi.tmpl'
+    ENV_FOLDER = CONDA_FOLDER + r'\envs\rapunzel\\'
+    MAKENSIS = r'..\nsis-3.05\makensis.exe'
+    ZIP = r'C:\Program Files\7-Zip\7z.exe'
+    VERSION = '3.3.0a56-py3-win64-1'
+    ENV_TARGET = CONDA_FOLDER + r'\envs\opensesame_{version}'
 
 
 # First build the environment
