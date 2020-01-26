@@ -1,4 +1,4 @@
-conda env remove -n rapunzel && ^
+conda env remove -y -n rapunzel && ^
 conda env create -f env\rapunzel-env.yaml && ^
 conda activate rapunzel && ^
 conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
