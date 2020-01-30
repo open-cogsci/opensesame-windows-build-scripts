@@ -4,25 +4,22 @@ import os
 import sys
 import subprocess
 
-CONDA_FOLDER = r'C:\Users\p279200\AppData\Local\conda\conda'
-OS_VERSION = '3.3.0a58'
+CONDA_FOLDER = r'conda'
+OS_VERSION = '3.3.0a59'
 BUILD_VERSION = '1'
+MAKENSIS = r'..\nsis-3.05\makensis.exe'
+ZIP = r'..\7zip\7z.exe'
+ENV_TARGET = CONDA_FOLDER + r'\envs\opensesame_{version}'
 if '--py2' in sys.argv:
     BAT_TMPL = r'bat\build-env-py2.bat.tmpl'
     NSI_TMPL = r'nsi\py2.nsi.tmpl'
     ENV_FOLDER = CONDA_FOLDER + r'\envs\rapunzel-py2\\'
-    MAKENSIS = r'..\nsis-3.05\makensis.exe'
-    ZIP = r'C:\Program Files\7-Zip\7z.exe'
-    VERSION = OS_VERSION + '-py2-win64-' + BUILD_VERSION
-    ENV_TARGET = CONDA_FOLDER + r'\envs\opensesame_{version}'
+    VERSION = OS_VERSION + '-py27-win64-' + BUILD_VERSION
 else:
     BAT_TMPL = r'bat\build-env.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
     ENV_FOLDER = CONDA_FOLDER + r'\envs\rapunzel\\'
-    MAKENSIS = r'..\nsis-3.05\makensis.exe'
-    ZIP = r'C:\Program Files\7-Zip\7z.exe'
-    VERSION = OS_VERSION + '-py3-win64-' + BUILD_VERSION
-    ENV_TARGET = CONDA_FOLDER + r'\envs\opensesame_{version}'
+    VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
 
 
 # First build the environment
