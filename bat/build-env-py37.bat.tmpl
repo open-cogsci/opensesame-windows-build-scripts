@@ -1,6 +1,6 @@
 conda env remove -y -p conda\rapunzel-py37 && ^
 conda env create --prefix conda\rapunzel-py37 -f env\rapunzel-env-py37.yaml && ^
-conda activate -p conda\rapunzel-py37 && ^
+conda activate conda\rapunzel-py37 && ^
 conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
 pip install soundfile && ^
 pip install --no-deps --upgrade --force ^

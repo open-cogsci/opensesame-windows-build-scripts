@@ -1,0 +1,5 @@
+conda
+*.zip
+*.exe
+build.bat
+build.nsi
