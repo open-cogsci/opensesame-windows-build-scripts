@@ -1,0 +1,29 @@
+conda env remove -y -p conda\rapunzel-py37 && ^
+conda env create --prefix conda\rapunzel-py37 -f env\rapunzel-env-py37.yaml && ^
+conda activate -p conda\rapunzel-py37 && ^
+conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
+pip install soundfile && ^
+pip install --no-deps --upgrade --force ^
+  pygame ^
+  python-qosf ^
+  yolk3k ^
+  http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl ^
+  python-qtpip && ^
+copy bat\rapunzel.bat {env_folder} && ^
+copy bat\opensesame.bat {env_folder} && ^
+copy bat\opensesamerun.bat {env_folder} && ^
+copy bat\ipython.bat {env_folder} && ^
+copy bat\qtconsole.bat {env_folder} && ^
+copy bat\psychopy.bat {env_folder} && ^
+copy ico\opensesame.ico {env_folder}\share\icons && ^
+copy ico\opensesamerun.ico {env_folder}\share\icons && ^
+copy ico\rapunzel.ico {env_folder}\share\icons && ^
+copy ico\psychopy.ico {env_folder}\share\icons && ^
+copy ico\qtconsole.ico {env_folder}\share\icons && ^
+copy ico\ipython.ico {env_folder}\share\icons && ^
+copy py\opensesame.py {env_folder}Lib\site-packages\ && ^
+copy py\opensesamerun.py {env_folder}Lib\site-packages\ && ^
+copy /Y misc\qt-root.conf {env_folder}qt.conf && ^
+copy /Y misc\qt-library.conf {env_folder}Library\bin\qt.conf && ^
+copy /Y misc\kernel.json {env_folder}share\jupyter\kernels\python3\ && ^
+conda deactivate

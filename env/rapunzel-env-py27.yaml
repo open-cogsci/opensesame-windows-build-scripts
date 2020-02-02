@@ -1,4 +1,4 @@
-name: rapunzel-py2
+name: rapunzel-py27
 channels:
 - conda-forge
 - cogsci

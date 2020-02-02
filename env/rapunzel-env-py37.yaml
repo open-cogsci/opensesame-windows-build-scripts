@@ -1,0 +1,15 @@
+name: rapunzel-py37
+channels:
+- conda-forge
+- anaconda
+- cogsci
+- defaults
+dependencies:
+- python=3.7
+- conda
+- psychopy
+- python-opensesame
+- python-pygaze
+- opensesame-extension-osweb
+# - opensesame-extension-osf  # Needs to be installed later
+- opensesame-plugin-psychopy

@@ -1,4 +1,4 @@
-name: rapunzel
+name: rapunzel-py36
 channels:
 - conda-forge
 - anaconda
