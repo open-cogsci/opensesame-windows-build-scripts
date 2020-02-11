@@ -9,6 +9,7 @@ dependencies:
 - python=2.7
 - conda
 - python-opensesame
+- rapunzel
 - python-pygaze
 - psychopy
 - opensesame-extension-osweb
