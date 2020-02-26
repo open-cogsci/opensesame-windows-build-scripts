@@ -12,7 +12,7 @@ else:
     NSI = '--nsi' in sys.argv
     COMPRESS = '--zip' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '3.3.0a62'
+OS_VERSION = '3.3.0a64'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
@@ -32,6 +32,11 @@ elif '--py37' in sys.argv:
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37\\'
     VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
+elif '--py37-megapack' in sys.argv:
+    BAT_TMPL = r'bat\build-env-py37-megapack.bat.tmpl'
+    NSI_TMPL = r'nsi\py3.nsi.tmpl'
+    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
+    VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
 else:
     raise ValueError('Please specify a target')
 

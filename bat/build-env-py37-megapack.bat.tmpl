@@ -1,16 +1,16 @@
 set PYTHONIOENCODING=UTF-8 && ^
-conda env remove -y -p conda\rapunzel-py37 && ^
-conda env create --prefix conda\rapunzel-py37 -f env\rapunzel-env-py37.yaml && ^
-conda activate conda\rapunzel-py37 && ^
+conda env remove -y -p conda\rapunzel-py37-megapack && ^
+conda env create --prefix conda\rapunzel-py37-megapack -f env\rapunzel-env-py37-megapack.yaml && ^
+conda activate conda\rapunzel-py37-megapack && ^
 conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
-pip install soundfile && ^
+pip install soundfile python-eyelinkparser && ^
 pip install --no-deps --upgrade --force ^
   pygame ^
   python-qosf ^
   yolk3k ^
   http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl ^
   python-qtpip && ^
-conda env export -f env/frozen-rapunzel-env-py37.yaml && ^
+conda env export -f env/frozen-rapunzel-env-py37-megapack.yaml && ^
 copy bat\rapunzel.bat {env_folder} && ^
 copy bat\opensesame.bat {env_folder} && ^
 copy bat\opensesamerun.bat {env_folder} && ^
