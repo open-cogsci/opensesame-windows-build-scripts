@@ -1,7 +1,7 @@
 set PYTHONIOENCODING=UTF-8 && ^
-conda env remove -y -p conda\rapunzel-py27 && ^
-conda env create --prefix conda\rapunzel-py27 -f env\rapunzel-env-py27.yaml && ^
-conda activate conda\rapunzel-py27 && ^
+conda env remove -y -p {env_folder} && ^
+conda env create --prefix {env_folder} -f {env_yaml} && ^
+conda activate {env_folder} && ^
 conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
 pip install pyglet==1.3.0 configobj json_tricks soundfile python-qosf yolk3k --upgrade && ^
 pip install --no-deps --upgrade --force ^

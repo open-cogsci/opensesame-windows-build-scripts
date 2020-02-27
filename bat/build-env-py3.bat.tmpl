@@ -1,7 +1,7 @@
 set PYTHONIOENCODING=UTF-8 && ^
-conda env remove -y -p conda\rapunzel-py37-megapack && ^
-conda env create --prefix conda\rapunzel-py37-megapack -f env\rapunzel-env-py37-megapack.yaml && ^
-conda activate conda\rapunzel-py37-megapack && ^
+conda env remove -y -p {env_folder} && ^
+conda env create --prefix {env_folder} -f {env_yaml} && ^
+conda activate {env_folder} && ^
 conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
 pip install soundfile python-eyelinkparser && ^
 pip install --no-deps --upgrade --force ^

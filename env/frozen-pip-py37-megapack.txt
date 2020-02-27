@@ -1,0 +1,15 @@
+--no-deps
+--upgrade
+--force
+arrow==0.7.0
+http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl
+humanize==0.5.1
+pygame==1.9.6
+pyqt5-sip==4.19.18
+pyqtwebengine==5.12.1
+python-eyelinkparser==0.9.3
+python-qosf==1.3.0
+python-qtpip==0.2.0
+requests-oauthlib==0.6.2
+soundfile==0.10.3.post1
+yolk3k==0.9

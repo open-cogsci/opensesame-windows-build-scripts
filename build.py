@@ -11,6 +11,7 @@ else:
     CLEAR = '--clear' in sys.argv
     NSI = '--nsi' in sys.argv
     COMPRESS = '--zip' in sys.argv
+FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
 OS_VERSION = '3.3.0a64'
 BUILD_VERSION = '1'
@@ -18,27 +19,31 @@ MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
 if '--py27' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py27.bat.tmpl'
+    BAT_TMPL = r'bat\build-env-py2.bat.tmpl'
     NSI_TMPL = r'nsi\py2.nsi.tmpl'
+    ENV_YAML = r'env\rapunzel-env-py27.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py27\\'
+    PIP_REQS = r'env\frozen-pip-py27.txt'
     VERSION = OS_VERSION + '-py27-win64-' + BUILD_VERSION
-elif '--py36' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py36.bat.tmpl'
-    NSI_TMPL = r'nsi\py3.nsi.tmpl'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py36\\'
-    VERSION = OS_VERSION + '-py36-win64-' + BUILD_VERSION
 elif '--py37' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py37.bat.tmpl'
+    BAT_TMPL = r'bat\build-env-py3.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
+    ENV_YAML = r'env\rapunzel-env-py37.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37\\'
+    PIP_REQS = r'env\frozen-pip-py37.txt'
     VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
 elif '--py37-megapack' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py37-megapack.bat.tmpl'
+    BAT_TMPL = r'bat\build-env-py3.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
+    ENV_YAML = r'env\rapunzel-env-py37-megapack.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
+    PIP_REQS = r'env\frozen-pip-py37-megapack.txt'
     VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
 else:
     raise ValueError('Please specify a target')
+if FROZEN:
+    BAT_TMPL = BAT_TMPL.replace('build', 'frozen')
+    ENV_YAML = ENV_YAML.replace('rapunzel', 'frozen-rapunzel')    
 
 if CLEAR:
     print('Clearing environments')
@@ -50,7 +55,13 @@ print('Creating build.bat')
 with open(BAT_TMPL) as fd:
     tmpl = fd.read()
 with open('build.bat', 'w') as fd:
-    fd.write(tmpl.format(env_folder=ENV_FOLDER))
+    fd.write(
+        tmpl.format(
+            env_folder=ENV_FOLDER,
+            env_yaml=ENV_YAML,
+            pip_reqs=PIP_REQS
+        )
+    )
 print('Running build.bat')
 subprocess.run(['build.bat'])
 if NSI:
