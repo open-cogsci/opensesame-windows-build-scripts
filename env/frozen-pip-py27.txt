@@ -1,6 +1,3 @@
---no-deps
---upgrade
---force
 arrow==0.7.0
 configobj==5.0.6
 http://files.cogsci.nl/expyriment-0.9.1b2_11_gc100ee8-py2-none-any.whl

@@ -2,7 +2,7 @@ set PYTHONIOENCODING=UTF-8 && ^
 conda env remove -y -p {env_folder} && ^
 conda env create -f {env_yaml} && ^
 conda activate {env_folder} && ^
-pip install -r {pip_reqs} && ^
+pip install --no-deps --upgrade --force -r {pip_reqs} && ^
 copy bat\rapunzel.bat {env_folder} && ^
 copy bat\opensesame.bat {env_folder} && ^
 copy bat\opensesamerun.bat {env_folder} && ^

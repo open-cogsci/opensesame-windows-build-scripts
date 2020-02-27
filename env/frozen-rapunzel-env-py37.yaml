@@ -196,4 +196,6 @@ dependencies:
   - zipp=3.0.0=py_0
   - zlib=1.2.11=h2fa13f4_1006
   - zstd=1.4.4=hd8a0e53_1
+  - humanize=0.5.1=py_1
+  - arrow
 prefix: X:\opensesame-windows-build-scripts\conda\rapunzel-py37
