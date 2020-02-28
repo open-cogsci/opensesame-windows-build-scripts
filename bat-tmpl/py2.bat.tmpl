@@ -1,8 +1,15 @@
 set PYTHONIOENCODING=UTF-8 && ^
 conda env remove -y -p {env_folder} && ^
-conda env create - -f {env_yaml} && ^
+conda env create --prefix {env_folder} -f {env_yaml} && ^
 conda activate {env_folder} && ^
-pip install --no-deps --upgrade --force -r {pip_reqs} && ^
+conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
+pip install pyglet==1.3.0 configobj json_tricks soundfile python-qosf yolk3k --upgrade && ^
+pip install --no-deps --upgrade --force ^
+  psychopy==1.85.3 ^
+  pygame ^
+  http://files.cogsci.nl/expyriment-0.9.1b2_11_gc100ee8-py2-none-any.whl ^
+  python-qtpip && ^
+conda env export -f env-export/opensesame_{version}.yaml && ^
 copy bat\rapunzel.bat {env_folder} && ^
 copy bat\opensesame.bat {env_folder} && ^
 copy bat\opensesamerun.bat {env_folder} && ^

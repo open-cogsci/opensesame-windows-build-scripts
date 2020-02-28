@@ -19,31 +19,31 @@ MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
 if '--py27' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py2.bat.tmpl'
+    BAT_TMPL = r'bat-tmpl\py2.bat.tmpl'
     NSI_TMPL = r'nsi\py2.nsi.tmpl'
-    ENV_YAML = r'env\rapunzel-env-py27.yaml'
+    ENV_YAML = r'env\py27.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py27\\'
-    PIP_REQS = r'env\frozen-pip-py27.txt'
+    PIP_REQS = r'pip_reqs\py27.txt'
     VERSION = OS_VERSION + '-py27-win64-' + BUILD_VERSION
 elif '--py37' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py3.bat.tmpl'
+    BAT_TMPL = r'bat-tmpl\py3.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
-    ENV_YAML = r'env\rapunzel-env-py37.yaml'
+    ENV_YAML = r'env\py37.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37\\'
-    PIP_REQS = r'env\frozen-pip-py37.txt'
+    PIP_REQS = r'pip_reqs\py37.txt'
     VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
 elif '--py37-megapack' in sys.argv:
-    BAT_TMPL = r'bat\build-env-py3.bat.tmpl'
+    BAT_TMPL = r'bat-tmpl\py3.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
-    ENV_YAML = r'env\rapunzel-env-py37-megapack.yaml'
+    ENV_YAML = r'env\py37-megapack.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
-    PIP_REQS = r'env\frozen-pip-py37-megapack.txt'
+    PIP_REQS = r'pip_reqs\py37-megapack.txt'
     VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
 else:
     raise ValueError('Please specify a target')
 if FROZEN:
-    BAT_TMPL = BAT_TMPL.replace('build', 'frozen')
-    ENV_YAML = ENV_YAML.replace('rapunzel', 'frozen-rapunzel')    
+    BAT_TMPL = BAT_TMPL.replace('\\', r'\frozen-')
+    ENV_YAML = ENV_YAML.replace('\\', r'\frozen-')
 
 if CLEAR:
     print('Clearing environments')
@@ -59,7 +59,8 @@ with open('build.bat', 'w') as fd:
         tmpl.format(
             env_folder=ENV_FOLDER,
             env_yaml=ENV_YAML,
-            pip_reqs=PIP_REQS
+            pip_reqs=PIP_REQS,
+            version=VERSION
         )
     )
 print('Running build.bat')

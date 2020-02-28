@@ -1,4 +1,3 @@
-name: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack
 channels:
   - cogsci
   - anaconda
@@ -165,11 +164,9 @@ dependencies:
   - notebook=6.0.3=py37_0
   - numexpr=2.7.1=py37h6538335_0
   - numpy=1.18.1=py37hc71023c_0
-  - oauthlib=1.1.2=py_0
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osf=1.2.1=py_0
   - opensesame-extension-osweb=1.3.3.0=py_1
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.1.1d=hfa6e2cd_0
@@ -210,7 +207,7 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=2.14.0a5=py_0
+  - pyqode.core=2.14.0a6=py_0
   - pyqode.python=2.12.2a7=py_0
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
@@ -320,4 +317,5 @@ dependencies:
   - zipp=3.0.0=py_0
   - zlib=1.2.11=h2fa13f4_1006
   - zstd=1.4.4=hd8a0e53_1
-prefix: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack
+  - humanize=0.5.1=py_1
+  - arrow=0.15.5=py37_0
