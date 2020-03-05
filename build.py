@@ -14,7 +14,7 @@ else:
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
 OS_VERSION = '3.3.0a65'
-BUILD_VERSION = '3'
+BUILD_VERSION = '4'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'

@@ -6,7 +6,7 @@ conda install -c cogsci -c conda-forge -y ^
   opensesame-extension-osf=1.2.1=py_0 ^
   requests-oauthlib=0.6.2 ^
   oauthlib=1.1.2=py_0 && ^
-pip install --user --no-deps --upgrade --force -r {pip_reqs} && ^
+pip install --no-deps --upgrade --force -r {pip_reqs} && ^
 conda env export -f env-export/opensesame_{version}.yaml && ^
 copy bat\rapunzel.bat {env_folder} && ^
 copy bat\opensesame.bat {env_folder} && ^

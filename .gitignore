@@ -3,3 +3,5 @@ conda
 *.exe
 build.bat
 build.nsi
+conda
+opensesame_*
