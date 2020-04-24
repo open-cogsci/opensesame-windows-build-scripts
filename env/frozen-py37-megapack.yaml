@@ -208,8 +208,8 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=2.15.0a2=py_0
-  - pyqode.python=2.12.2a9=py_2
+  - pyqode.core=2.15.0a4=py_0
+  - pyqode.python=2.12.2a10=py_2
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
   - pyreadline=2.1=py37_1001
@@ -226,11 +226,11 @@ dependencies:
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.0a73=py_0
+  - python-opensesame=3.3.0=py_0
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
-  - python-qdatamatrix=0.1.23=py_6
+  - python-qdatamatrix=0.1.24=py_6
   - python-qnotifications=2.0.3=py_2
   - python-sounddevice=0.3.14=py_0
   - pytz=2019.3=py_0
@@ -268,7 +268,7 @@ dependencies:
   - r-uuid=0.1_2=r36hda5aaf8_1002
   - r-vctrs=0.2.3=r36hda5aaf8_0
   - r-zeallot=0.1.0=r36h6115d3f_1001
-  - rapunzel=0.4.3=py_0
+  - rapunzel=0.4.4=py_0
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
