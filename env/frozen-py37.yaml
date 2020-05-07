@@ -128,7 +128,7 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=2.15.0a4=py_0
+  - pyqode.core=2.15.0a5=py_0  # Updated in 3.3.1
   - pyqode.python=2.12.2a10=py_2
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
@@ -139,15 +139,15 @@ dependencies:
   - pytables=3.6.1=py37h26f9782_1
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.10.14=pyh39e3cac_2
+  - python-datamatrix=0.10.17=pyh39e3cac_0  # Updated in 3.3.1
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.0=py_0
+  - python-opensesame=3.3.1=py_0  # Updated in 3.3.1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
-  - python-qdatamatrix=0.1.24=py_6
+  - python-qdatamatrix=0.1.27=py_0  # Updated in 3.3.1
   - python-qnotifications=2.0.3=py_2
   - python-sounddevice=0.3.14=py_0
   - pytz=2019.3=py_0
@@ -160,7 +160,7 @@ dependencies:
   - qtconsole=4.6.0=py_0
   - qtpy=1.9.0=py_0
   - questplus=2019.4=py_0
-  - rapunzel=0.4.4=py_0
+  - rapunzel=0.4.5=py_0  # Updated in 3.3.1
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
   - ruamel.yaml.clib=0.2.0=py37hfa6e2cd_0
