@@ -1,0 +1,12 @@
+name: rapunzel-py38-rapuznel
+channels:
+- conda-forge
+- anaconda
+- cogsci
+- defaults
+dependencies:
+- python=3.8
+- conda
+- python-opensesame
+- rapunzel
+- qt=5.12

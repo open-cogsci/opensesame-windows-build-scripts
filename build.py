@@ -14,10 +14,12 @@ else:
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
 OS_VERSION = '3.3.1'
+RAPUNZEL_VERSION = '0.4.5'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
+ZIP_TARGET = 'opensesame_{}.zip'
 if '--py27' in sys.argv:
     BAT_TMPL = r'bat-tmpl\py2.bat.tmpl'
     NSI_TMPL = r'nsi\py2.nsi.tmpl'
@@ -39,6 +41,15 @@ elif '--py37-megapack' in sys.argv:
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
     PIP_REQS = r'pip_reqs\py37-megapack.txt'
     VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
+elif '--py38-rapunzel' in sys.argv:
+    BAT_TMPL = r'bat-tmpl\rapunzel.bat.tmpl'
+    NSI_TMPL = r'nsi\rapunzel.nsi.tmpl'
+    ENV_YAML = r'env\py38-rapunzel.yaml'
+    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py38-rapunzel\\'
+    PIP_REQS = r'pip_reqs\py38-rapunzel.txt'
+    VERSION = RAPUNZEL_VERSION + '-py38-win64-' + BUILD_VERSION
+    ENV_TARGET = CONDA_FOLDER + r'\rapunzel_{version}'
+    ZIP_TARGET = 'rapunzel_{}.zip'
 else:
     raise ValueError('Please specify a target')
 if FROZEN:
@@ -83,7 +94,7 @@ if COMPRESS:
         ZIP,
         'a',
         '-y',
-        'opensesame_{}.zip'.format(VERSION),
+        ZIP_TARGET.format(VERSION),
         os.path.abspath(ENV_TARGET.format(version=VERSION))
     ])
     print('Done!')

@@ -50,7 +50,7 @@ dependencies:
   - imageio-ffmpeg=0.4.1=py_0
   - importlib_metadata=1.5.0=py37_0
   - intel-openmp=2020.0=166
-  - ipykernel=5.1.4=py37h5ca1d4c_0
+  - ipykernel=5.2.1=py37h5ca1d4c_0  # Updated in 3.3.1
   - ipython=7.12.0=py37h5ca1d4c_0
   - ipython_genutils=0.2.0=py_1
   - javascripthon=0.10=py_3
@@ -84,7 +84,7 @@ dependencies:
   - matplotlib=3.1.3=py37_0
   - matplotlib-base=3.1.3=py37h2981e6d_0
   - menuinst=1.4.16=py37_0
-  - mkl=2019.5=281
+  - mkl=2019.4  # Updated in 3.3.1
   - mkl-service=2.3.0=py37hfa6e2cd_0
   - mock=3.0.5=py37_0
   - moviepy=1.0.1=py_0
@@ -97,7 +97,7 @@ dependencies:
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.3.7.0=py_0
+  - opensesame-extension-osweb=1.3.8.0=py_0
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.1.1d=hfa6e2cd_0
   - pandas=1.0.1=py37he350917_0
@@ -177,8 +177,8 @@ dependencies:
   - tqdm=4.43.0=py_0
   - traitlets=4.3.3=py37_0
   - urllib3=1.25.7=py37_0
-  - vc=14.1=h21ff451_3
-  - vs2015_runtime=15.5.2=3
+  - vc=14.1  # Updated in 3.3.1
+  - vs2015_runtime=14.16  # Updated in 3.3.1
   - wcwidth=0.1.8=py_0
   - webassets=2.0=py_0
   - webcolors=1.9.1=py_0
