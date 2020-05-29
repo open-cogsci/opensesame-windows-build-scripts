@@ -14,4 +14,4 @@ libs\python-qtpip-0.2.0.tar.gz
 libs\SoundFile-0.10.3.post1-py2.py3.cp26.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp32.pp33-none-win_amd64.whl
 libs\yolk3k-0.9.tar.gz
 libs\mediadecoder-0.1.5-py2-none-any.whl
-libs\opensesame-plugin-media_player_mpy-0.1.8.tar.gz
+libs\opensesame-plugin-media_player_mpy-0.1.9.tar.gz
