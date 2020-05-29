@@ -82,6 +82,9 @@ Section "OpenSesame" SEC01
     SetOverwrite try
     File /r "{env_folder}\*.*"
     ${{registerExtension}} "$INSTDIR\opensesame.bat" ".osexp" "OpenSesame experiment"
+    ${{registerExtension}} "$INSTDIR\rapunzel.bat" ".py" "Python script"
+    WriteRegStr HKCR "OpenSesame experiment\DefaultIcon" "" "$INSTDIR\share\icons\opensesame.ico,0"
+    WriteRegStr HKCR "Python script\DefaultIcon" "" "$INSTDIR\share\icons\ipython.ico,0"
 SectionEnd
 
 Section -AdditionalIcons

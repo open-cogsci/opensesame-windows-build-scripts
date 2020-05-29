@@ -82,6 +82,7 @@ Section "OpenSesame" SEC01
     SetOverwrite try
     File /r "{env_folder}\*.*"
     ${{registerExtension}} "$INSTDIR\rapunzel.bat" ".py" "Python script"
+    WriteRegStr HKCR "Python script\DefaultIcon" "" "$INSTDIR\share\icons\ipython.ico,0"
 SectionEnd
 
 Section -AdditionalIcons
