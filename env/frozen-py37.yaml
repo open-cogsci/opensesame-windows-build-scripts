@@ -97,7 +97,7 @@ dependencies:
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.3.8.0=py_0
+  - opensesame-extension-osweb=1.3.9.0=py_0  # Updated in 3.3.4
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.1.1d=hfa6e2cd_0
   - pandas=1.0.1=py37he350917_0
@@ -128,8 +128,8 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=3.0.0=py_2  # Updated in 3.3.3
-  - pyqode.python=3.0.0=py_2  # Updated in 3.3.3
+  - pyqode.core=3.0.8=py_0  # Updated in 3.3.4
+  - pyqode.python=3.0.2=py_0  # Updated in 3.3.4
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
   - pyrsistent=0.15.6=py37hfa6e2cd_0
@@ -139,16 +139,16 @@ dependencies:
   - pytables=3.6.1=py37h26f9782_1
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.10.17=pyh39e3cac_0  # Updated in 3.3.1
+  - python-datamatrix=0.11.0=pyh39e3cac_0  # Updated in 3.3.1
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.3=py_0  # Updated in 3.3.3
+  - python-opensesame=3.3.4a13=py_0  # Updated in 3.3.4
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
   - python-qdatamatrix=0.1.27=py_0  # Updated in 3.3.1
-  - python-qnotifications=2.0.3=py_2
+  - python-qnotifications=2.0.6=py_0
   - python-sounddevice=0.3.14=py_0
   - pytz=2019.3=py_0
   - pywin32=227=py37hfa6e2cd_0
@@ -160,7 +160,7 @@ dependencies:
   - qtconsole=4.6.0=py_0
   - qtpy=1.9.0=py_0
   - questplus=2019.4=py_0
-  - rapunzel=0.4.7=py_0  # Updated in 3.3.3
+  - rapunzel=0.4.11=py_0  # Updated in 3.3.3
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
   - ruamel.yaml.clib=0.2.0=py37hfa6e2cd_0
