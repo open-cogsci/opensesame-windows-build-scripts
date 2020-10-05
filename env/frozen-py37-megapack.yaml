@@ -187,7 +187,7 @@ dependencies:
   - prompt_toolkit=3.0.3=py_0
   - prov=1.5.3=py_1
   - psutil=5.7.0=py37hfa6e2cd_0
-  - psychopy=2020.1.2=py37_0
+  - psychopy=2020.2.4.post1  # Updated in 3.3.4
   - pthread-stubs=0.4=h301d43c_1001
   - py-opencv=4.2.0=py37h5ca1d4c_2
   - pycodestyle=2.5.0=py_0
@@ -221,12 +221,12 @@ dependencies:
   - pytables=3.5.2=py37h6a20dd8_0
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.10.17=pyh39e3cac_0  # Updated in 3.3.1
+  - python-datamatrix=0.11.0=pyh39e3cac_0  # Updated in 3.3.4
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.4a13=py_0  # Updated in 3.3.4
+  - python-opensesame=3.3.4=py_0  # Updated in 3.3.4
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0

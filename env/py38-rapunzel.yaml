@@ -10,3 +10,4 @@ dependencies:
 - python-opensesame
 - rapunzel
 - qt=5.12
+- psutil
