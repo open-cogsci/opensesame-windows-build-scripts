@@ -1,3 +1,4 @@
+name: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack
 channels:
   - cogsci
   - anaconda
@@ -10,6 +11,7 @@ dependencies:
   - arabic_reshaper=2.0.15=py_1
   - astunparse=1.6.2=py_0
   - attrs=19.3.0=py_0
+  - autopep8=1.4.4=py_0
   - backcall=0.1.0=py_0
   - backports=1.0=py_2
   - beautifulsoup4=4.8.2=py37_0
@@ -17,13 +19,13 @@ dependencies:
   - bleach=3.1.1=py_0
   - blosc=1.17.1=h6538335_0
   - bzip2=1.0.8=hfa6e2cd_2
-  - ca-certificates=2019.11.28=hecc5488_0
-  - certifi=2019.11.28=py37_0
+  - ca-certificates=2020.11.8=h5b45459_0
+  - certifi=2020.11.8=py37h03978a9_0
   - cffi=1.13.2=py37hb32ad35_0
   - chardet=3.0.4=py37_1003
   - click=7.0=py_0
   - colorama=0.4.3=py_0
-  - conda=4.8.2=py37_0
+  - conda=4.9.2=py37h03978a9_0
   - conda-package-handling=1.6.0=py37h2fa13f4_1
   - configobj=5.0.6=py_0
   - configparser=3.7.3=py37_1
@@ -60,6 +62,7 @@ dependencies:
   - hdf4=4.2.13=hf8e6fe8_1003
   - hdf5=1.10.4=nompi_hcc15c50_1106
   - html5lib=1.0.1=py_0
+  - humanize=0.5.1=py_1
   - icc_rt=2019.0.0=h0cc432a_1
   - icu=64.2=he025d50_1
   - idna=2.9=py_1
@@ -67,7 +70,7 @@ dependencies:
   - imageio-ffmpeg=0.4.1=py_0
   - importlib_metadata=1.5.0=py37_0
   - intel-openmp=2020.0=166
-  - ipykernel=5.2.1=py37h5ca1d4c_0  # Updated in 3.3.1
+  - ipykernel=5.2.1=py37h5ca1d4c_0
   - ipython=7.12.0=py37h5ca1d4c_0
   - ipython_genutils=0.2.0=py_1
   - isodate=0.6.0=py_1
@@ -145,7 +148,7 @@ dependencies:
   - mayavi=4.7.1=py37hf36c280_0
   - menuinst=1.4.16=py37_0
   - mistune=0.8.4=py37hfa6e2cd_1000
-  - mkl=2019.4  # Updated in 3.3.1
+  - mkl=2019.4=245
   - mne=0.19.2=py_2
   - mock=3.0.5=py37_0
   - moviepy=1.0.1=py_0
@@ -164,12 +167,14 @@ dependencies:
   - notebook=6.0.3=py37_0
   - numexpr=2.7.1=py37h6538335_0
   - numpy=1.18.1=py37hc71023c_0
+  - oauthlib=1.1.2=py_0
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.3.11.0=py_0  # Updated in 3.3.4
+  - opensesame-extension-osf=1.2.1=py_0
+  - opensesame-extension-osweb=1.3.11.0=py_0
   - opensesame-plugin-psychopy=0.6.0=py_0
-  - openssl=1.1.1d=hfa6e2cd_0
+  - openssl=1.1.1h=he774522_0
   - packaging=20.1=py_0
   - pandas=1.0.1=py37he350917_0
   - pandoc=2.9.2=0
@@ -187,7 +192,7 @@ dependencies:
   - prompt_toolkit=3.0.3=py_0
   - prov=1.5.3=py_1
   - psutil=5.7.0=py37hfa6e2cd_0
-  - psychopy=2020.2.8  # Updated in 3.3.6
+  - psychopy=2020.2.8=py37h03978a9_0
   - pthread-stubs=0.4=h301d43c_1001
   - py-opencv=4.2.0=py37h5ca1d4c_2
   - pycodestyle=2.5.0=py_0
@@ -200,16 +205,16 @@ dependencies:
   - pyflakes=2.1.1=py_0
   - pyglet=1.5.0=py37_0
   - pyglfw=1.11.0=py37_0
-  - pyjsparser=2.7.1=pyh8c360ce_0
   - pygments=2.5.2=py_0
+  - pyjsparser=2.7.1=pyh8c360ce_0
   - pyopengl=3.1.5=py_0
   - pyopenssl=19.1.0=py_1
   - pyosf=1.0.5=py_2
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=3.0.10=py_0  # Updated in 3.3.6
-  - pyqode.python=3.1.0=py_0  # Updated in 3.3.6
+  - pyqode.core=3.0.10=py_0
+  - pyqode.python=3.1.0=py_0
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
   - pyreadline=2.1=py37_1001
@@ -221,18 +226,20 @@ dependencies:
   - pytables=3.5.2=py37h6a20dd8_0
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.11.0=pyh39e3cac_0  # Updated in 3.3.4
+  - python-datamatrix=0.11.0=pyh39e3cac_0
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.6=py_0  # Updated in 3.3.6
+  - python-opensesame=3.3.6=py_0
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
-  - python-qdatamatrix=0.1.29=py_0  # Updated in 3.3.6
+  - python-qdatamatrix=0.1.29=py_0
   - python-qnotifications=2.0.6=py_0
+  - python-qosf=1.3.1=py_1
   - python-sounddevice=0.3.14=py_0
+  - python_abi=3.7=1_cp37m
   - pytz=2019.3=py_0
   - pywin32=227=py37hfa6e2cd_0
   - pywinhook=1.6.2=py37hfa6e2cd_0
@@ -268,9 +275,10 @@ dependencies:
   - r-uuid=0.1_2=r36hda5aaf8_1002
   - r-vctrs=0.2.3=r36hda5aaf8_0
   - r-zeallot=0.1.0=r36h6115d3f_1001
-  - rapunzel=0.4.14=py_0  # Updated 3.3.6
+  - rapunzel=0.4.14=py_0
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
+  - requests-oauthlib=1.0.0=py37_1
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
   - ruamel.yaml.clib=0.2.0=py37hfa6e2cd_0
   - ruamel_yaml=0.15.80=py37hfa6e2cd_1000
@@ -298,13 +306,14 @@ dependencies:
   - traits=6.0.0=py37hfa6e2cd_0
   - traitsui=6.1.3=py_0
   - urllib3=1.25.7=py37_0
-  - vc=14.1  # Updated in 3.3.1
-  - vs2015_runtime=14.16  # Updated in 3.3.1
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_3
   - vtk=8.2.0=py37h2e9203a_201
   - wcwidth=0.1.8=py_0
   - webassets=2.0=py_0
   - webcolors=1.9.1=py_0
   - webencodings=0.5.1=py_1
+  - websocket-client=0.57.0=py37_2
   - wheel=0.34.2=py_1
   - win_inet_pton=1.1.0=py37_0
   - wincertstore=0.2=py37_1003
@@ -318,5 +327,16 @@ dependencies:
   - zipp=3.0.0=py_0
   - zlib=1.2.11=h2fa13f4_1006
   - zstd=1.4.4=hd8a0e53_1
-  - humanize=0.5.1=py_1
-  - arrow=0.15.5=py37_0
+  - pip:
+    - arrow==0.7.0
+    - expyriment==0.10.0+opensesame2
+    - mediadecoder==0.1.5
+    - opensesame-plugin-media-player-mpy==0.1.11
+    - pygame==1.9.6
+    - pyqt5-sip==4.19.18
+    - pyqtwebengine==5.12.1
+    - python-eyelinkparser==0.9.3
+    - python-qtpip==0.3.0
+    - soundfile==0.10.3.post1
+    - yolk3k==0.9
+prefix: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack

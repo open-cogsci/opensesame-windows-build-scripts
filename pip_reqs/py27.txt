@@ -9,7 +9,7 @@ libs\humanize-0.5.1.tar.gz
 libs\pygame-1.9.6-cp27-cp27m-win_amd64.whl
 libs\pyglet-1.3.0-py2.py3-none-any.whl
 libs\python_qosf-1.3.1-py2.py3-none-any.whl
-libs\python-qtpip-0.2.0.tar.gz
+libs\python-qtpip-0.3.0.tar.gz
 # libs\requests_oauthlib-0.6.2-py2.py3-none-any.whl
 libs\SoundFile-0.10.3.post1-py2.py3.cp26.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp32.pp33-none-win_amd64.whl
 libs\yolk3k-0.9.tar.gz
