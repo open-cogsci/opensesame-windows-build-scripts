@@ -14,7 +14,7 @@ else:
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
 OS_VERSION = '3.3.6'
-RAPUNZEL_VERSION = '0.4.14'
+RAPUNZEL_VERSION = '0.5.5'
 BUILD_VERSION = '2'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
@@ -41,13 +41,13 @@ elif '--py37-megapack' in sys.argv:
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
     PIP_REQS = r'pip_reqs\py37-megapack.txt'
     VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
-elif '--py38-rapunzel' in sys.argv:
+elif '--py39-rapunzel' in sys.argv:
     BAT_TMPL = r'bat-tmpl\rapunzel.bat.tmpl'
     NSI_TMPL = r'nsi\rapunzel.nsi.tmpl'
-    ENV_YAML = r'env\py38-rapunzel.yaml'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py38-rapunzel\\'
-    PIP_REQS = r'pip_reqs\py38-rapunzel.txt'
-    VERSION = RAPUNZEL_VERSION + '-py38-win64-' + BUILD_VERSION
+    ENV_YAML = r'env\py39-rapunzel.yaml'
+    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py39-rapunzel\\'
+    PIP_REQS = r'pip_reqs\py39-rapunzel.txt'
+    VERSION = RAPUNZEL_VERSION + '-py39-win64-' + BUILD_VERSION
     ENV_TARGET = CONDA_FOLDER + r'\rapunzel_{version}'
     ZIP_TARGET = 'rapunzel_{}.zip'
 else:

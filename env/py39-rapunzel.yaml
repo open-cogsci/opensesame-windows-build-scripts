@@ -1,13 +1,16 @@
-name: rapunzel-py38-rapuznel
+name: rapunzel-py39-rapuznel
 channels:
 - conda-forge
 - anaconda
 - cogsci
 - defaults
 dependencies:
-- python=3.8
+- python=3.9
 - conda
 - python-opensesame
 - rapunzel
 - qt=5.12
-- psutil
+- notebook
+- pandoc
+- seaborn
+- statsmodels
