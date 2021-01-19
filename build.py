@@ -6,16 +6,17 @@ import shutil
 import subprocess
 
 if '--full' in sys.argv:
-    CLEAR = NSI = COMPRESS = True
+    BUILD = CLEAR = NSI = COMPRESS = True
 else:
+    BUILD = '--build' in sys.argv
     CLEAR = '--clear' in sys.argv
     NSI = '--nsi' in sys.argv
     COMPRESS = '--zip' in sys.argv
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '3.3.6'
-RAPUNZEL_VERSION = '0.5.5'
-BUILD_VERSION = '2'
+OS_VERSION = '3.3.7'
+RAPUNZEL_VERSION = '0.5.7'
+BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
@@ -74,8 +75,9 @@ with open('build.bat', 'w') as fd:
             version=VERSION
         )
     )
-print('Running build.bat')
-subprocess.run(['build.bat'])
+if BUILD:
+    print('Running build.bat')
+    subprocess.run(['build.bat'])
 if NSI:
     # Now build the installer
     print('Creating build.nsi')
