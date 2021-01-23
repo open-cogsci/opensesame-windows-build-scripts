@@ -229,7 +229,7 @@ dependencies:
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.7a8=py_0  # Updated in 3.3.7
+  - python-opensesame=3.3.7a7=py_0  # Updated in 3.3.7
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
@@ -272,7 +272,14 @@ dependencies:
   - r-vctrs=0.2.3=r36hda5aaf8_0
   - r-zeallot=0.1.0=r36h6115d3f_1001
   - r-languageserver  # New in 3.3.7
-  - rapunzel=0.5.8=py_0  # Updated in 3.3.7
+  - r-ggplot2  # New in 3.3.7
+  - r-lme4  # New in 3.3.7
+  - r-data.table  # New in 3.3.7
+  - r-tidyverse # New in 3.3.7
+  - r-stringr  # New in 3.3.7
+  - r-zoo  # New in 3.3.7
+  - r-dplyr  # New in 3.3.7
+  - rapunzel=0.5.9=py_1  # Updated in 3.3.7
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
