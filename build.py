@@ -6,7 +6,8 @@ import shutil
 import subprocess
 
 if '--full' in sys.argv:
-    BUILD = CLEAR = NSI = COMPRESS = True
+    BUILD = NSI = COMPRESS = True
+    CLEAR = False
 else:
     BUILD = '--build' in sys.argv
     CLEAR = '--clear' in sys.argv
