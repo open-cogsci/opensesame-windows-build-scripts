@@ -21,10 +21,15 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 
 def rapunzel():
 
-    import asyncio
-    asyncio.set_event_loop_policy(
-        asyncio.WindowsSelectorEventLoopPolicy()
-    )  # A Hack for Python 3.8 on Windows
+    # A Hack for Python 3.8 on Windows. However, if asyncio is not available
+    # then this is not crucial.
+    try:
+        import asyncio
+        asyncio.set_event_loop_policy(
+            asyncio.WindowsSelectorEventLoopPolicy()
+        )
+    except ImportError:
+        pass
     import sys
     sys.argv.append(u'--mode=ide')
     from libqtopensesame import __main__
