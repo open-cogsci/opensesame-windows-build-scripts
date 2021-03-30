@@ -8,3 +8,4 @@ libs\SoundFile-0.10.3.post1-py2.py3.cp26.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp32
 libs\yolk3k-0.9.tar.gz
 libs\mediadecoder-0.1.5-py3-none-any.whl
 libs\opensesame_plugin_media_player_mpy-0.1.11-py3-none-any.whl
+libs\PyOpenGL_accelerate-3.1.5-cp37-cp37m-win_amd64.whl
