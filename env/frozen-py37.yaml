@@ -144,7 +144,7 @@ dependencies:
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.9a4=py_0  # Updated in 3.3.9
+  - python-opensesame=3.3.9=py_0  # Updated in 3.3.9
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
   - python-qdatamatrix=0.1.30=py_0  # Updated in 3.3.9
@@ -160,7 +160,7 @@ dependencies:
   - qtconsole=4.6.0=py_0
   - qtpy=1.9.0=py_0
   - questplus=2019.4=py_0
-  - rapunzel=0.5.19=py_1  # Updated in 3.3.9
+  - rapunzel=0.5.22=py_1  # Updated in 3.3.9
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
   - ruamel.yaml.clib=0.2.0=py37hfa6e2cd_0

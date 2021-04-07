@@ -15,8 +15,8 @@ else:
     COMPRESS = '--zip' in sys.argv
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '3.3.9a4'
-RAPUNZEL_VERSION = '0.5.19'
+OS_VERSION = '3.3.9'
+RAPUNZEL_VERSION = '0.5.22'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
@@ -37,7 +37,7 @@ elif '--py37' in sys.argv:
     PIP_REQS = r'pip_reqs\py37.txt'
     VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
 elif '--py37-megapack' in sys.argv:
-    BAT_TMPL = r'bat-tmpl\py3.bat.tmpl'
+    BAT_TMPL = r'bat-tmpl\py3-megapack.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
     ENV_YAML = r'env\py37-megapack.yaml'
     ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
