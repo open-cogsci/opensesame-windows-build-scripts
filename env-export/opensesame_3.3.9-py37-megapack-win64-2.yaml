@@ -1,3 +1,4 @@
+name: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack
 channels:
   - cogsci
   - anaconda
@@ -10,6 +11,7 @@ dependencies:
   - arabic_reshaper=2.0.15=py_1
   - astunparse=1.6.2=py_0
   - attrs=19.3.0=py_0
+  - autopep8=1.4.4=py_0
   - backcall=0.1.0=py_0
   - backports=1.0=py_2
   - beautifulsoup4=4.8.2=py37_0
@@ -17,13 +19,13 @@ dependencies:
   - bleach=3.1.1=py_0
   - blosc=1.17.1=h6538335_0
   - bzip2=1.0.8=hfa6e2cd_2
-  - ca-certificates=2019.11.28=hecc5488_0
-  - certifi=2019.11.28=py37_0
+  - ca-certificates=2020.12.5=h5b45459_0
+  - certifi=2020.12.5=py37h03978a9_1
   - cffi=1.13.2=py37hb32ad35_0
   - chardet=3.0.4=py37_1003
   - click=7.0=py_0
   - colorama=0.4.3=py_0
-  - conda=4.8.2=py37_0
+  - conda=4.10.0=py37h03978a9_1
   - conda-package-handling=1.6.0=py37h2fa13f4_1
   - configobj=5.0.6=py_0
   - configparser=3.7.3=py37_1
@@ -60,6 +62,7 @@ dependencies:
   - hdf4=4.2.13=hf8e6fe8_1003
   - hdf5=1.10.4=nompi_hcc15c50_1106
   - html5lib=1.0.1=py_0
+  - humanize=0.5.1=py_1
   - icc_rt=2019.0.0=h0cc432a_1
   - icu=64.2=he025d50_1
   - idna=2.9=py_1
@@ -67,7 +70,7 @@ dependencies:
   - imageio-ffmpeg=0.4.1=py_0
   - importlib_metadata=1.5.0=py37_0
   - intel-openmp=2020.0=166
-  - ipykernel=5.2.1=py37h5ca1d4c_0  # Updated in 3.3.1
+  - ipykernel=5.2.1=py37h5ca1d4c_0
   - ipython=7.12.0=py37h5ca1d4c_0
   - ipython_genutils=0.2.0=py_1
   - isodate=0.6.0=py_1
@@ -118,6 +121,7 @@ dependencies:
   - m2w64-gettext=0.19.7=2
   - m2w64-gmp=6.1.0=2
   - m2w64-gsl=2.1=2
+  - m2w64-icu=58.2=2
   - m2w64-libiconv=1.14=6
   - m2w64-libjpeg-turbo=1.4.2=3
   - m2w64-libogg=1.3.2=3
@@ -128,6 +132,7 @@ dependencies:
   - m2w64-libwinpthread-git=5.0.0.4634.697f757=2
   - m2w64-libxml2=2.9.3=4
   - m2w64-mpfr=3.1.4=4
+  - m2w64-nlopt=2.4.2=3
   - m2w64-pcre=8.38=2
   - m2w64-speex=1.2rc2=3
   - m2w64-speexdsp=1.2rc3=3
@@ -145,7 +150,7 @@ dependencies:
   - mayavi=4.7.1=py37hf36c280_0
   - menuinst=1.4.16=py37_0
   - mistune=0.8.4=py37hfa6e2cd_1000
-  - mkl=2019.4  # Updated in 3.3.1
+  - mkl=2019.4=245
   - mne=0.19.2=py_2
   - mock=3.0.5=py37_0
   - moviepy=1.0.1=py_0
@@ -161,16 +166,19 @@ dependencies:
   - nilearn=0.6.1=pyh5ca1d4c_1
   - nipy=0.4.2=py37hc8d92b1_1001
   - nipype=1.4.2=py37_1
+  - nodejs=15.14.0=h57928b3_0
   - notebook=6.0.3=py37_0
   - numexpr=2.7.1=py37h6538335_0
   - numpy=1.18.1=py37hc71023c_0
+  - oauthlib=1.1.2=py_0
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.3.13.2=py_0  # Updated in 3.3.9
+  - opensesame-extension-language_server=0.1.11=py_2
+  - opensesame-extension-osf=1.2.1=py_0
+  - opensesame-extension-osweb=1.3.13.2=py_0
   - opensesame-plugin-psychopy=0.6.0=py_0
-  - opensesame-extension-language_server=0.1.11  # Updated in 3.3.9
-  - openssl=1.1.1d=hfa6e2cd_0
+  - openssl=1.1.1k=h8ffe710_0
   - packaging=20.1=py_0
   - pandas=1.0.1=py37he350917_0
   - pandoc=2.9.2=0
@@ -188,7 +196,7 @@ dependencies:
   - prompt_toolkit=3.0.3=py_0
   - prov=1.5.3=py_1
   - psutil=5.7.0=py37hfa6e2cd_0
-  - psychopy=2021.1.3  # Updated in 3.3.9
+  - psychopy=2021.1.3=py37h03978a9_0
   - pthread-stubs=0.4=h301d43c_1001
   - py-opencv=4.2.0=py37h5ca1d4c_2
   - pycodestyle=2.5.0=py_0
@@ -201,18 +209,18 @@ dependencies:
   - pyflakes=2.1.1=py_0
   - pyglet=1.5.0=py37_0
   - pyglfw=1.11.0=py37_0
-  - pyjsparser=2.7.1=pyh8c360ce_0
   - pygments=2.5.2=py_0
-  - pylspclient  # New in 3.3.7
+  - pyjsparser=2.7.1=pyh8c360ce_0
+  - pylspclient=0.0.3a3=py_1
   - pyopengl=3.1.5=py_0
   - pyopenssl=19.1.0=py_1
   - pyosf=1.0.5=py_2
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=3.2.6=py_0  # Updated in 3.3.9
-  - pyqode.python=3.2.3=py_0  # Updated in 3.3.9
-  - pyqode.language_server=0.1.11  # New in 3.3.7
+  - pyqode.core=3.2.6=py_0
+  - pyqode.language_server=0.1.11=0
+  - pyqode.python=3.2.3=py_0
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
   - pyreadline=2.1=py37_1001
@@ -224,18 +232,20 @@ dependencies:
   - pytables=3.5.2=py37h6a20dd8_0
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.11.0=pyh39e3cac_0  # Updated in 3.3.4
+  - python-datamatrix=0.11.0=pyh39e3cac_0
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.9=py_0  # Updated in 3.3.9
+  - python-opensesame=3.3.9=py_0
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.2a2=py_0
-  - python-qdatamatrix=0.1.30=py_0  # Updated in 3.3.9
+  - python-qdatamatrix=0.1.30=py_0
   - python-qnotifications=2.0.6=py_0
+  - python-qosf=1.3.1=py_1
   - python-sounddevice=0.3.14=py_0
+  - python_abi=3.7=1_cp37m
   - pytz=2019.3=py_0
   - pywin32=227=py37hfa6e2cd_0
   - pywinhook=1.6.2=py37hfa6e2cd_0
@@ -247,41 +257,140 @@ dependencies:
   - qtconsole=4.6.0=py_0
   - qtpy=1.9.0=py_0
   - questplus=2019.4=py_0
+  - r-askpass=1.1=r36hda5aaf8_2
   - r-assertthat=0.2.1=r36h6115d3f_1
   - r-backports=1.1.5=r36hda5aaf8_0
   - r-base=3.6.2=hf0ea6f9_1
   - r-base64enc=0.1_3=r36hda5aaf8_1003
+  - r-blob=1.2.1=r36h6115d3f_1
+  - r-boot=1.3_27=r36hc72bb7e_0
+  - r-brew=1.0_6=r36h6115d3f_1003
+  - r-brio=1.1.1=r36h6d2157b_0
+  - r-broom=0.7.6=r36hc72bb7e_0
+  - r-callr=3.6.0=r36hc72bb7e_0
+  - r-cellranger=1.1.0=r36h6115d3f_1003
   - r-cli=2.0.1=r36h6115d3f_0
+  - r-clipr=0.7.1=r36h142f84f_0
+  - r-codetools=0.2_18=r36hc72bb7e_0
+  - r-collections=0.3.5=r36hda5aaf8_0
+  - r-colorspace=2.0_0=r36h6d2157b_0
+  - r-commonmark=1.7=r36hda5aaf8_1002
+  - r-cpp11=0.2.7=r36hc72bb7e_0
   - r-crayon=1.3.4=r36h6115d3f_1002
+  - r-curl=4.3=r36h6d2157b_1
+  - r-cyclocomp=1.1.0=r36h6115d3f_1004
+  - r-data.table=1.14.0=r36h6d2157b_0
+  - r-dbi=1.1.1=r36hc72bb7e_0
+  - r-dbplyr=2.1.1=r36hc72bb7e_0
+  - r-desc=1.3.0=r36hc72bb7e_0
+  - r-diffobj=0.3.3=r36h6d2157b_0
   - r-digest=0.6.25=r36h796a38f_0
+  - r-dplyr=0.8.5=r36h796a38f_1
   - r-ellipsis=0.3.0=r36hda5aaf8_0
   - r-evaluate=0.14=r36h6115d3f_1
   - r-fansi=0.4.1=r36hda5aaf8_0
+  - r-farver=2.1.0=r36ha856d6a_0
+  - r-forcats=0.5.1=r36hc72bb7e_0
+  - r-fs=1.5.0=r36h796a38f_0
+  - r-generics=0.1.0=r36hc72bb7e_0
+  - r-ggplot2=3.3.3=r36hc72bb7e_0
   - r-glue=1.3.1=r36hda5aaf8_1
+  - r-gtable=0.3.0=r36h6115d3f_3
+  - r-haven=2.3.1=r36h1d849e9_0
+  - r-highr=0.8=r36h6115d3f_2
+  - r-hms=1.0.0=r36hc72bb7e_0
   - r-htmltools=0.4.0=r36h796a38f_0
+  - r-httr=1.4.2=r36h6115d3f_0
   - r-irdisplay=0.7=r36_1001
   - r-irkernel=1.1=r36h6115d3f_0
+  - r-isoband=0.2.4=r36ha856d6a_0
   - r-jsonlite=1.6.1=r36hda5aaf8_0
+  - r-knitr=1.31=r36hc72bb7e_0
+  - r-labeling=0.4.2=r36h142f84f_0
+  - r-languageserver=0.3.9=r36h6d2157b_0
+  - r-lattice=0.20_41=r36h6d2157b_3
+  - r-lazyeval=0.2.2=r36hda5aaf8_2
+  - r-lifecycle=0.2.0=r36h6115d3f_1
+  - r-lintr=2.0.1=r36h6115d3f_1
+  - r-lme4=1.1_26=r36ha856d6a_0
+  - r-lubridate=1.7.10=r36ha856d6a_0
+  - r-magrittr=2.0.1=r36h6d2157b_1
+  - r-markdown=1.1=r36h6d2157b_1
+  - r-mass=7.3_53.1=r36h6d2157b_0
+  - r-matrix=1.3_2=r36hd2e18ed_0
+  - r-mgcv=1.8_34=r36hd2e18ed_0
+  - r-mime=0.10=r36h6d2157b_0
+  - r-minqa=1.2.4=r36h7ff5ea2_1006
+  - r-modelr=0.1.8=r36h6115d3f_0
+  - r-munsell=0.5.0=r36h6115d3f_1003
+  - r-nlme=3.1_152=r36he816bda_0
+  - r-nloptr=1.2.2.2=r36h796a38f_0
+  - r-openssl=1.4.1=r36h3a32873_0
   - r-pbdzmq=0.3_3=r36h8216dcb_1002
   - r-pillar=1.4.3=r36h6115d3f_0
+  - r-pkgconfig=2.0.3=r36h6115d3f_1
+  - r-pkgload=1.2.1=r36ha856d6a_0
+  - r-plogr=0.2.0=r36h6115d3f_1003
+  - r-plyr=1.8.6=r36h796a38f_1
+  - r-praise=1.0.0=r36h6115d3f_1004
+  - r-prettyunits=1.1.1=r36h6115d3f_1
+  - r-processx=3.5.1=r36h6d2157b_0
+  - r-progress=1.2.2=r36h6115d3f_2
+  - r-ps=1.6.0=r36h6d2157b_0
+  - r-purrr=0.3.4=r36hda5aaf8_1
+  - r-r.cache=0.14.0=r36h6115d3f_1
+  - r-r.methodss3=1.8.1=r36h6115d3f_0
+  - r-r.oo=1.24.0=r36h6115d3f_0
+  - r-r.utils=2.10.1=r36h6115d3f_0
+  - r-r6=2.5.0=r36hc72bb7e_0
+  - r-rcolorbrewer=1.1_2=r36h6115d3f_1003
   - r-rcpp=1.0.3=r36h796a38f_0
+  - r-rcppeigen=0.3.3.9.1=r36h399f8d5_0
+  - r-readr=1.4.0=r36h096a1c2_0
+  - r-readxl=1.3.1=r36h1d849e9_4
+  - r-rematch=1.0.1=r36h6115d3f_1003
+  - r-rematch2=2.1.2=r36h6115d3f_1
+  - r-remotes=2.3.0=r36hc72bb7e_0
   - r-repr=1.1.0=r36h6115d3f_0
+  - r-reprex=1.0.0=r36hc72bb7e_0
+  - r-reshape2=1.4.4=r36h796a38f_1
+  - r-rex=1.2.0=r36h6115d3f_1
   - r-rlang=0.4.4=r36hda5aaf8_0
+  - r-rmarkdown=2.7=r36hc72bb7e_0
+  - r-roxygen2=7.1.1=r36h796a38f_0
+  - r-rprojroot=2.0.2=r36hc72bb7e_0
+  - r-rstudioapi=0.13=r36hc72bb7e_0
+  - r-rvest=0.3.6=r36h6115d3f_0
+  - r-scales=1.1.1=r36h6115d3f_0
+  - r-selectr=0.4_2=r36h6115d3f_1
+  - r-statmod=1.4.35=r36h8933c1f_1
+  - r-stringdist=0.9.6.3=r36h6d2157b_0
+  - r-stringi=1.5.3=r36ha856d6a_1
+  - r-stringr=1.4.0=r36h6115d3f_2
+  - r-styler=1.4.1=r36hc72bb7e_0
+  - r-sys=3.4=r36hda5aaf8_0
+  - r-testthat=3.0.2=r36ha856d6a_0
+  - r-tibble=2.1.3=r36hda5aaf8_1
+  - r-tidyr=1.1.0=r36h796a38f_0
+  - r-tidyselect=1.1.0=r36h6115d3f_0
+  - r-tidyverse=1.3.0=r36h6115d3f_2
+  - r-tinytex=0.31=r36hc72bb7e_0
   - r-utf8=1.1.4=r36hda5aaf8_1001
   - r-uuid=0.1_2=r36hda5aaf8_1002
   - r-vctrs=0.2.3=r36hda5aaf8_0
+  - r-viridislite=0.3.0=r36h6115d3f_1003
+  - r-waldo=0.2.5=r36hc72bb7e_0
+  - r-withr=2.4.1=r36hc72bb7e_0
+  - r-xfun=0.20=r36h6d2157b_0
+  - r-xml2=1.3.2=r36h796a38f_1
+  - r-xmlparsedata=1.0.5=r36hc72bb7e_0
+  - r-yaml=2.2.1=r36h6d2157b_1
   - r-zeallot=0.1.0=r36h6115d3f_1001
-  - r-languageserver  # New in 3.3.7
-  - r-ggplot2  # New in 3.3.7
-  - r-lme4  # New in 3.3.7
-  - r-data.table  # New in 3.3.7
-  - r-tidyverse # New in 3.3.7
-  - r-stringr  # New in 3.3.7
-  - r-zoo  # New in 3.3.7
-  - r-dplyr  # New in 3.3.7
-  - rapunzel=0.5.22=py_1  # Updated in 3.3.9
+  - r-zoo=1.8_9=r36h6d2157b_0
+  - rapunzel=0.5.22=py_1
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
+  - requests-oauthlib=1.0.0=py37_1
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
   - ruamel.yaml.clib=0.2.0=py37hfa6e2cd_0
   - ruamel_yaml=0.15.80=py37hfa6e2cd_1000
@@ -309,13 +418,14 @@ dependencies:
   - traits=6.0.0=py37hfa6e2cd_0
   - traitsui=6.1.3=py_0
   - urllib3=1.25.7=py37_0
-  - vc=14.1  # Updated in 3.3.1
-  - vs2015_runtime=14.16  # Updated in 3.3.1
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_3
   - vtk=8.2.0=py37h2e9203a_201
   - wcwidth=0.1.8=py_0
   - webassets=2.0=py_0
   - webcolors=1.9.1=py_0
   - webencodings=0.5.1=py_1
+  - websocket-client=0.57.0=py37_2
   - wheel=0.34.2=py_1
   - win_inet_pton=1.1.0=py37_0
   - wincertstore=0.2=py37_1003
@@ -329,5 +439,17 @@ dependencies:
   - zipp=3.0.0=py_0
   - zlib=1.2.11=h2fa13f4_1006
   - zstd=1.4.4=hd8a0e53_1
-  - humanize=0.5.1=py_1
-  - arrow=0.15.5=py37_0
+  - pip:
+    - arrow==0.7.0
+    - expyriment==0.10.0+opensesame2
+    - mediadecoder==0.1.5
+    - opensesame-plugin-media-player-mpy==0.1.11
+    - pygame==1.9.6
+    - pyopengl-accelerate==3.1.5
+    - pyqt5-sip==4.19.18
+    - pyqtwebengine==5.12.1
+    - python-eyelinkparser==0.9.3
+    - python-qtpip==0.3.0
+    - soundfile==0.10.3.post1
+    - yolk3k==0.9
+prefix: X:\opensesame-windows-build-scripts\conda\rapunzel-py37-megapack
