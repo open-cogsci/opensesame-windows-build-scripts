@@ -63,7 +63,7 @@ dependencies:
   - numpy=1.16.5=py27h0d21db5_0
   - olefile=0.46=py_0
   - openpyxl=2.6.4=py_0
-  - opensesame-extension-osweb=1.4.0.0a4=py_0  # Updated in 3.3.10
+  - opensesame-extension-osweb=1.4.0.0a5=py_0  # Updated in 3.3.10
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.0.2u=h0c8e037_0
   - parso=0.6.1=py_0
