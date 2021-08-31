@@ -188,7 +188,7 @@ dependencies:
   - prompt_toolkit=3.0.3=py_0
   - prov=1.5.3=py_1
   - psutil=5.7.0=py37hfa6e2cd_0
-  - psychopy=2021.2.2  # Updated in 3.3.10
+  - psychopy=2021.2.3  # Updated in 3.3.10
   - pthread-stubs=0.4=h301d43c_1001
   - py-opencv=4.2.0=py37h5ca1d4c_2
   - pycodestyle=2.5.0=py_0
@@ -210,7 +210,7 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=3.2.11=py_0  # Updated in 3.3.10
+  - pyqode.core=3.2.17=py_0  # Updated in 3.3.10
   - pyqode.python=3.2.3=py_0  # Updated in 3.3.9
   - pyqode.language_server=0.1.11  # New in 3.3.7
   - pyqode.qt=2.10.0=pyh8a2030e_0
@@ -229,7 +229,7 @@ dependencies:
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.10a12=py_0  # Updated in 3.3.10
+  - python-opensesame=3.3.10a14=py_0  # Updated in 3.3.10
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.3=py_0  # Updated in 3.3.10
@@ -280,7 +280,7 @@ dependencies:
   - r-stringr  # New in 3.3.7
   - r-zoo  # New in 3.3.7
   - r-dplyr  # New in 3.3.7
-  - rapunzel=0.5.27=py_1  # Updated in 3.3.10
+  - rapunzel=0.5.29=py_1  # Updated in 3.3.10
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0

@@ -1,6 +1,6 @@
 # OpenSesame build scripts for Windows
 
-Copyright 2020 Sebastiaan Mathôt
+Copyright 2020 - 2021 Sebastiaan Mathôt
 
 
 ## About
@@ -19,14 +19,16 @@ Target can be one of:
 - `--py37`
 - `--py37-megapack`
 - `--py27`
+- `--py39-rapunzel`
 
 Options can be:
 
+- `--build` to build the Anaconda environment from scratch
 - `--frozen` to build with fixed package versions determined by previous builds
 - `--zip` to create `.zip` archive for distribution
 - `--exe` to create `.exe` installer for distribution
 - `--clear` to clear the `conda`` environment folder before building
-- `--all` is equal to `--zip`, `--exe`, and `--clear`
+- `--full` is equal to `--zip`, `--exe`, and `--build`
 
 
 ## Requirements
