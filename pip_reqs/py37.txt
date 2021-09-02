@@ -3,9 +3,12 @@ libs\pygame-1.9.6-cp37-cp37m-win_amd64.whl
 # libs\PyQt5_sip-4.19.19-cp37-none-win_amd64.whl
 # libs\PyQtWebEngine-5.12.1-5.12.7-cp35.cp36.cp37.cp38-none-win_amd64.whl
 libs\python_qosf-1.3.1-py2.py3-none-any.whl
-libs\python-qtpip-0.3.0.tar.gz
+# libs\python-qtpip-0.3.0.tar.gz
 libs\SoundFile-0.10.3.post1-py2.py3.cp26.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp32.pp33-none-win_amd64.whl
 libs\yolk3k-0.9.tar.gz
 libs\mediadecoder-0.1.5-py3-none-any.whl
 libs\opensesame_plugin_media_player_mpy-0.1.11-py3-none-any.whl
 libs\PyOpenGL_accelerate-3.1.5-cp37-cp37m-win_amd64.whl
+libs\pyo-1.0.4-cp37-cp37m-win_amd64.whl
+libs\psychtoolbox-3.0.17.8-cp37-cp37m-win_amd64.whl
+libs\SpeechRecognition-3.8.1-py2.py3-none-any.whl

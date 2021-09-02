@@ -181,7 +181,7 @@ dependencies:
   - pickleshare=0.7.5=py37_1000
   - pillow=7.0.0=py37h9ea1dd6_0
   - pip=20.0.2=py_2
-  - portaudio=19.6.0=hca4a3dc_2
+  - portaudio=19.6.0  # Updated in 3.3.10
   - prettytable=0.7.2=py_3
   - proglog=0.1.9=py_0
   - prometheus_client=0.7.1=py_0

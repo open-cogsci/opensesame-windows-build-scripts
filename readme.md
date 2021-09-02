@@ -5,13 +5,22 @@ Copyright 2020 - 2021 Sebastiaan Mathôt
 
 ## About
 
-These scripts build Anaconda environments for OpenSesame, and package them as `.zip` and `.exe` installers. 
+These scripts build Windows Anaconda environments for OpenSesame (experiment builder for the social sciences) and Rapunzel (code editor for numerical computing), and package them as `.zip` and `.exe` installers. 
+
+- OpenSesame: <https://osdoc.cogsci.nl/>
+- Rapunzel: <https://rapunzel.cogsci.nl/>
 
 
 ## Use
 
 ```
 python build.py [target] [options]
+```
+
+Example:
+
+```
+python build.py --py37 --build --frozen
 ```
 
 Target can be one of:
