@@ -97,7 +97,7 @@ dependencies:
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.4.0.0a6=py_0  # Updated in 3.3.10
+  - opensesame-extension-osweb=1.4.0.0=py_0  # Updated in 3.3.10
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.1.1d=hfa6e2cd_0
   - pandas=1.0.1=py37he350917_0
@@ -144,7 +144,7 @@ dependencies:
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.10a14=py_0  # Updated in 3.3.10
+  - python-opensesame=3.3.10=py_0  # Updated in 3.3.10
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.3=py_0  # Updated in 3.3.10
   - python-qdatamatrix=0.1.31=py_0  # Updated in 3.3.10
