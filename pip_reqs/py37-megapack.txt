@@ -1,6 +1,6 @@
 libs\arrow-0.7.0.tar.gz
 libs\humanize-0.5.1.tar.gz
-libs\python_eyelinkparser-0.9.3-py2.py3-none-any.whl
+libs\python_eyelinkparser-0.14.0-py2.py3-none-any.whl
 # libs\requests_oauthlib-0.6.2-py2.py3-none-any.whl
 libs\expyriment-0.10.0+opensesame2-py3-none-any.whl
 libs\pygame-1.9.6-cp37-cp37m-win_amd64.whl
