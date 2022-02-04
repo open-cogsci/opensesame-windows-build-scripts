@@ -29,4 +29,5 @@ copy py\opensesamerun.py {env_folder}Lib\site-packages\ && ^
 copy /Y misc\qt-root.conf {env_folder}qt.conf && ^
 copy /Y misc\qt-library.conf {env_folder}Library\bin\qt.conf && ^
 copy /Y misc\kernel.json {env_folder}share\jupyter\kernels\python3\ && ^
+rmdir /s /q {env_folder}pkgs\ && ^
 conda deactivate
