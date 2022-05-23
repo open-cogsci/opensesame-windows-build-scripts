@@ -63,7 +63,7 @@ dependencies:
   - numpy=1.16.5=py27h0d21db5_0
   - olefile=0.46=py_0
   - openpyxl=2.6.4=py_0
-  - opensesame-extension-osweb=1.4.4.0=py_0  # Updated in 3.3.11
+  - opensesame-extension-osweb=1.4.11.0=py_0  # Updated in 3.3.12
   - opensesame-plugin-psychopy=0.6.0=py_0
   - openssl=1.0.2u=h0c8e037_0
   - parso=0.6.1=py_0
@@ -81,7 +81,7 @@ dependencies:
   - pygments=2.5.2=py_0
   - pyjsparser=2.7.1=pyh8c360ce_0
   - pyopenssl=19.0.0=py27_0
-  - pyqode.core=3.2.24=py_0  # Updated in 3.3.11
+  - pyqode.core=3.2.25=py_0  # Updated in 3.3.12
   - pyqode.python=3.2.3=py_0  # Updated in 3.3.9
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.6.0=py27h4cbc711_1008
@@ -90,13 +90,13 @@ dependencies:
   - pysocks=1.7.1=py27_0
   - pyspellchecker=0.5.2=py_1
   - python=2.7.15=h2880e7c_1009
-  - python-datamatrix=0.13.2=pyh39e3cac_0  # Updated in 3.3.11
+  - python-datamatrix=0.14.3=pyh39e3cac_0  # Updated in 3.3.12
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-levenshtein=0.12.0=py27h0c8e037_1001
-  - python-opensesame=3.3.11=py_0  # Updated in 3.3.11
+  - python-opensesame=3.3.12a4=py_0  # Updated in 3.3.12
   - python-pseudorandom=0.2.2=py_1
-  - python-pygaze=0.7.4=py_0  # Updated in 3.3.11
+  - python-pygaze=0.7.5a5=py_0  # Updated in 3.3.12
   - python-qdatamatrix=0.1.31=py_0  # Updated in 3.3.10
   - python-qnotifications=2.0.6=py_0
   - pywin32=221=py27_0
@@ -106,7 +106,7 @@ dependencies:
   - qtawesome=0.7.0=py_0
   - qtconsole=4.6.0=py_0
   - qtpy=1.9.0=py_0
-  - rapunzel=0.5.35=py_1  # Updated in 3.3.11
+  - rapunzel=0.5.37=py_1  # Updated in 3.3.12
   - requests=2.23.0=py27_0
   - ruamel_yaml=0.15.71=py27h0c8e037_1000
   - scandir=1.10.0=py27h0c8e037_0
