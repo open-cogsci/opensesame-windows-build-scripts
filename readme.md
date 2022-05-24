@@ -1,6 +1,6 @@
 # OpenSesame build scripts for Windows
 
-Copyright 2020 - 2021 Sebastiaan Mathôt
+Copyright 2020 - 2022 Sebastiaan Mathôt
 
 
 ## About
