@@ -7,7 +7,7 @@ channels:
 dependencies:
 - python=3.10
 - conda
-- python-opensesame=3.3.13a3
+- python-opensesame=3.3.13a4
 - rapunzel=0.5.42
 - qt
 - pyqtwebengine

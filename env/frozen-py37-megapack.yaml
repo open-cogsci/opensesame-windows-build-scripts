@@ -167,8 +167,8 @@ dependencies:
   - olefile=0.46=py_0
   - opencv=4.2.0=py37_2
   - openpyxl=3.0.3=py_0
-  - opensesame-extension-osweb=1.4.11.0=py_0  # Updated in 3.3.12
-  - opensesame-plugin-psychopy=0.6.0=py_0
+  - opensesame-extension-osweb=1.4.12.0=py_0  # Updated in 3.3.13
+  - opensesame-plugin-psychopy=0.6.2=py_1  # Updated in 3.3.13
   - opensesame-extension-language_server=0.1.11  # Updated in 3.3.9
   - openssl=1.1.1d=hfa6e2cd_0
   - packaging=20.1=py_0
@@ -188,7 +188,7 @@ dependencies:
   - prompt_toolkit=3.0.3=py_0
   - prov=1.5.3=py_1
   - psutil=5.7.0=py37hfa6e2cd_0
-  - psychopy=2021.2.3  # Updated in 3.3.10
+  - psychopy=2022.1.4  # Updated in 3.3.13
   - pthread-stubs=0.4=h301d43c_1001
   - py-opencv=4.2.0=py37h5ca1d4c_2
   - pycodestyle=2.5.0=py_0
@@ -210,8 +210,8 @@ dependencies:
   - pyparsing=2.4.6=py_0
   - pypubsub=4.0.3=py_0
   - pyqmix=2019.1=py37_0
-  - pyqode.core=3.2.25=py_0  # Updated in 3.3.12
-  - pyqode.python=3.2.3=py_0  # Updated in 3.3.9
+  - pyqode.core=3.2.35=py_0  # Updated in 3.3.13
+  - pyqode.python=3.2.4=py_0  # Updated in 3.3.13
   - pyqode.language_server=0.1.11  # New in 3.3.7
   - pyqode.qt=2.10.0=pyh8a2030e_0
   - pyqt=5.12.3=py37h6538335_1
@@ -224,12 +224,12 @@ dependencies:
   - pytables=3.5.2=py37h6a20dd8_0
   - python=3.7.6=h5b45d93_2
   - python-bidi=0.4.2=py_0
-  - python-datamatrix=0.14.3=pyh39e3cac_0  # Updated in 3.3.12
+  - python-datamatrix=0.15.3  # Updated in 3.3.13
   - python-dateutil=2.8.1=py_0
   - python-fileinspector=1.0.2=py_1
   - python-gitlab=2.0.1=py_0
   - python-levenshtein=0.12.0=py37hfa6e2cd_1001
-  - python-opensesame=3.3.12=py_0  # Updated in 3.3.12
+  - python-opensesame=3.3.13a4=py_0  # Updated in 3.3.13
   - python-picard=0.4=pyh5ca1d4c_1
   - python-pseudorandom=0.2.2=py_1
   - python-pygaze=0.7.5a5=py_0  # Updated in 3.3.12
@@ -280,7 +280,7 @@ dependencies:
   - r-stringr  # New in 3.3.7
   - r-zoo  # New in 3.3.7
   - r-dplyr  # New in 3.3.7
-  - rapunzel=0.5.37=py_1  # Updated in 3.3.12
+  - rapunzel=0.5.42=py_1  # Updated in 3.3.13
   - rdflib=4.2.2=py37_1000
   - requests=2.23.0=py37_0
   - ruamel.yaml=0.16.6=py37hfa6e2cd_0
