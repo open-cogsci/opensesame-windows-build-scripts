@@ -1,6 +1,6 @@
 # OpenSesame build scripts for Windows
 
-Copyright 2020 - 2022 Sebastiaan Mathôt
+Copyright 2020 - 2023 Sebastiaan Mathôt
 
 
 ## About
@@ -20,15 +20,12 @@ python build.py [target] [options]
 Example:
 
 ```
-python build.py --py37 --build --frozen
+python build.py --py311 --build --frozen
 ```
 
 Target can be one of:
 
-- `--py37`
-- `--py37-megapack`
-- `--py27`
-- `--py39-rapunzel`
+- `--py311`
 
 Options can be:
 

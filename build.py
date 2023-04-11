@@ -15,43 +15,20 @@ else:
     COMPRESS = '--zip' in sys.argv
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '3.3.14'
-RAPUNZEL_VERSION = '0.5.42'
+OS_VERSION = '4.0.0a23'
+RAPUNZEL_VERSION = '1.0.0a8'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
 ZIP_TARGET = 'opensesame_{}.zip'
-if '--py27' in sys.argv:
-    BAT_TMPL = r'bat-tmpl\py2.bat.tmpl'
-    NSI_TMPL = r'nsi\py2.nsi.tmpl'
-    ENV_YAML = r'env\py27.yaml'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py27\\'
-    PIP_REQS = r'pip_reqs\py27.txt'
-    VERSION = OS_VERSION + '-py27-win64-' + BUILD_VERSION
-elif '--py37' in sys.argv:
+if '--py311' in sys.argv:
     BAT_TMPL = r'bat-tmpl\py3.bat.tmpl'
     NSI_TMPL = r'nsi\py3.nsi.tmpl'
-    ENV_YAML = r'env\py37.yaml'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37\\'
-    PIP_REQS = r'pip_reqs\py37.txt'
-    VERSION = OS_VERSION + '-py37-win64-' + BUILD_VERSION
-elif '--py37-megapack' in sys.argv:
-    BAT_TMPL = r'bat-tmpl\py3-megapack.bat.tmpl'
-    NSI_TMPL = r'nsi\py3.nsi.tmpl'
-    ENV_YAML = r'env\py37-megapack.yaml'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py37-megapack\\'
-    PIP_REQS = r'pip_reqs\py37-megapack.txt'
-    VERSION = OS_VERSION + '-py37-megapack-win64-' + BUILD_VERSION
-elif '--py310-rapunzel' in sys.argv:
-    BAT_TMPL = r'bat-tmpl\rapunzel.bat.tmpl'
-    NSI_TMPL = r'nsi\rapunzel.nsi.tmpl'
-    ENV_YAML = r'env\py310-rapunzel.yaml'
-    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py310-rapunzel\\'
-    PIP_REQS = r'pip_reqs\py310-rapunzel.txt'
-    VERSION = RAPUNZEL_VERSION + '-py310-win64-' + BUILD_VERSION
-    ENV_TARGET = CONDA_FOLDER + r'\rapunzel_{version}'
-    ZIP_TARGET = 'rapunzel_{}.zip'
+    ENV_YAML = r'env\py311.yaml'
+    ENV_FOLDER = CONDA_FOLDER + r'\rapunzel-py311\\'
+    PIP_REQS = r'pip_reqs\py311.txt'
+    VERSION = OS_VERSION + '-py311-win64-' + BUILD_VERSION
 else:
     raise ValueError('Please specify a target')
 if FROZEN:

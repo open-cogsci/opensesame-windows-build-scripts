@@ -1,0 +1,43 @@
+name: rapunzel-py311
+channels:
+- cogsci
+- conda-forge
+- anaconda
+- defaults
+dependencies:
+- python=3.11
+- conda
+- pip
+# OpenSesame packages
+- opensesame>=3.99.99
+- rapunzel>=0.99.99
+- opensesame-extension-osweb
+- opensesame-extension-updater
+- opensesame-extension-language_server
+- opensesame-plugin-psychopy
+# JavaScript packages
+- nodejs
+# Miscellaneous dependencies, mainly for PsychoPy, which we install later 
+# without dependendencies to keep the environment clean
+- pygame
+- pyglet
+- wxpython
+- json_tricks
+- freetype-py
+- pandas
+- scipy
+- arabic_reshaper
+- git
+- lxml
+- pip:
+    - https://github.com/smathot/PyGaze/releases/download/prerelease%2F0.8.0a3/python_pygaze-0.8.0a3-py3-none-any.whl
+    - ../libs/expyriment-0.10.0+opensesame2-py3-none-any.whl
+    - opensesame-plugin-media-player-mpy
+    - pyqt6==6.4.2
+    - pyqt6-qt6==6.4.3
+    - pyqt6-sip==13.4.1
+    - pyqt6-webengine==6.4.0
+    - pyqt6-webengine-qt6==6.4.3
+    - qtconsole
+    - python-bidi
+    - matplotlib  # don't use conda package because this depends on PyQt5

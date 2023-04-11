@@ -2,14 +2,11 @@ set PYTHONIOENCODING=UTF-8 && ^
 conda env remove -y -p {env_folder} && ^
 conda env create --prefix {env_folder} -f {env_yaml} && ^
 conda activate {env_folder} && ^
-conda install -c cogsci -c conda-forge -y opensesame-extension-osf && ^
-pip install soundfile python-eyelinkparser && ^
-pip install --no-deps --upgrade --force ^
-  pygame ^
-  python-qosf ^
-  yolk3k ^
-  http://files.cogsci.nl/expyriment-0.10.0+opensesame2-py3-none-any.whl ^
-  python-qtpip && ^
+pip install --no-deps psychopy && ^
+pip install psychopy_sounddevice && ^
+npm install -g typescript typescript-language-server ^
+  vscode-css-languageserver-bin ^
+  vscode-json-languageserver && ^
 conda env export -f env-export/opensesame_{version}.yaml && ^
 copy bat\rapunzel.bat {env_folder} && ^
 copy bat\opensesame.bat {env_folder} && ^
@@ -17,6 +14,7 @@ copy bat\opensesamerun.bat {env_folder} && ^
 copy bat\ipython.bat {env_folder} && ^
 copy bat\qtconsole.bat {env_folder} && ^
 copy bat\psychopy.bat {env_folder} && ^
+mkdir {env_folder}\share\icons && ^
 copy ico\opensesame.ico {env_folder}\share\icons && ^
 copy ico\opensesamerun.ico {env_folder}\share\icons && ^
 copy ico\rapunzel.ico {env_folder}\share\icons && ^

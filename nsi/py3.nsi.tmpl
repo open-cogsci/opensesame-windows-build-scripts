@@ -92,7 +92,7 @@ Section -AdditionalIcons
   CreateDirectory "$SMPROGRAMS\OpenSesame"
   CreateShortCut "$SMPROGRAMS\OpenSesame\OpenSesame.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesame.py" "$INSTDIR\share\icons\opensesame.ico"
   CreateShortCut "$SMPROGRAMS\OpenSesame\OpenSesame (runtime).lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesamerun.py" "$INSTDIR\share\icons\opensesamerun.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\Rapunzel.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\rapunzel.py" $INSTDIR\share\icons\rapunzel.ico"
+  CreateShortCut "$SMPROGRAMS\OpenSesame\Rapunzel.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesame.py --mode=ide" $INSTDIR\share\icons\rapunzel.ico"
   CreateShortCut "$SMPROGRAMS\OpenSesame\PsychoPy.lnk" "$INSTDIR\psychopy.bat" "" "$INSTDIR\share\icons\psychopy.ico"
   CreateShortCut "$SMPROGRAMS\OpenSesame\IPython.lnk" "$INSTDIR\ipython.bat" "" "$INSTDIR\share\icons\ipython.ico"
   CreateShortCut "$SMPROGRAMS\OpenSesame\IPython (QtConsole).lnk" "$INSTDIR\qtconsole.bat" "" "$INSTDIR\share\icons\qtconsole.ico"
