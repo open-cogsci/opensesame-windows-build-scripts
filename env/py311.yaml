@@ -29,6 +29,7 @@ dependencies:
 - arabic_reshaper
 - git
 - lxml
+- js2py=0.74
 - pip:
     - https://github.com/smathot/PyGaze/releases/download/prerelease%2F0.8.0a3/python_pygaze-0.8.0a3-py3-none-any.whl
     - ../libs/expyriment-0.10.0+opensesame2-py3-none-any.whl
