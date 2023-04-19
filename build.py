@@ -15,8 +15,8 @@ else:
     COMPRESS = '--zip' in sys.argv
 FROZEN = '--frozen' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '4.0.0a23'
-RAPUNZEL_VERSION = '1.0.0a8'
+OS_VERSION = '4.0.0a27'
+RAPUNZEL_VERSION = '1.0.0a9'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'

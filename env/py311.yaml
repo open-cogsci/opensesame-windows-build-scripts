@@ -15,6 +15,7 @@ dependencies:
 - opensesame-extension-updater
 - opensesame-extension-language_server
 - opensesame-plugin-psychopy
+- pygaze
 # JavaScript packages
 - nodejs
 # Miscellaneous dependencies, mainly for PsychoPy, which we install later 
@@ -31,7 +32,6 @@ dependencies:
 - lxml
 - js2py=0.74
 - pip:
-    - https://github.com/smathot/PyGaze/releases/download/prerelease%2F0.8.0a3/python_pygaze-0.8.0a3-py3-none-any.whl
     - ../libs/expyriment-0.10.0+opensesame2-py3-none-any.whl
     - opensesame-plugin-media-player-mpy
     - pyqt6==6.4.2
