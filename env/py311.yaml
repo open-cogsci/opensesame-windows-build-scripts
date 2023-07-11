@@ -16,6 +16,7 @@ dependencies:
 - opensesame-extension-language_server
 - opensesame-plugin-psychopy
 - pygaze
+- brotlicffi
 # JavaScript packages
 - nodejs
 # Miscellaneous dependencies, mainly for PsychoPy, which we install later 
