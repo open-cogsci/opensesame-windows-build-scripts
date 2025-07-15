@@ -26,7 +26,7 @@ dependencies:
   - conda-package-streaming=0.8.0=pyhd8ed1ab_0
   - configparser=5.3.0=pyhd8ed1ab_0
   - cryptography=41.0.2=py311h28e9c30_0
-  - datamatrix=1.0.5  # updated in 4.0.13
+  - datamatrix=1.0.13  # updated in 4.0.24
   - dav1d=1.2.1=hcfcfb64_0
   - docutils=0.20.1=py311h1ea47a8_0
   - dukpy=0.2.3=py311ha68e1ae_3
@@ -109,9 +109,9 @@ dependencies:
   - openh264=2.3.1=h63175ca_2
   - openjpeg=2.5.0=ha2aaf27_2
   - openpyxl=3.1.2=py311ha68e1ae_0
-  - opensesame=4.0.13=py_2  # Updated in 4.0.13
+  - opensesame=4.0.24=py_2  # Updated in 4.0.24
   - opensesame-extension-language_server=0.2.4=py_3
-  - opensesame-extension-osweb=2.1.0.0=py_1  # Updated in 4.0.13
+  - opensesame-extension-osweb=2.2.1.1=py_1  # Updated in 4.0.24
   - opensesame-extension-updater=0.1.14=py_0  # Updated in 4.0.13
   - opensesame-plugin-psychopy=0.8.0=py_1
   - openssl=3.1.1=hcfcfb64_1
