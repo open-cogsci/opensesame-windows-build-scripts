@@ -5,3 +5,4 @@ build.bat
 build.nsi
 conda
 conda.bak
+env-export

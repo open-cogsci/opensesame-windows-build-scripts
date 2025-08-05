@@ -19,14 +19,14 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 
-def opensesamerun():
+def sigmund_analyst():
 
-    from libqtopensesame import __main__
-    __main__.opensesamerun()
+    from pyqt_code_editor import app
+    app.launch_app()
 
 
 # checking if __name__ is __main__ is required to let multiprocessing correctly
 # work on Windows (or any other platform that is not able to use os.fork)
 if __name__ == "__main__":
 
-    opensesamerun()
+    sigmund_analyst()

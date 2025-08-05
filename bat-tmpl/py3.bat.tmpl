@@ -1,28 +1,18 @@
 set PYTHONIOENCODING=UTF-8 && ^
 conda env remove -y -p {env_folder} && ^
-conda env create --prefix {env_folder} -f {env_yaml} && ^
+conda create -p {env_folder} python=3.13 -y && ^
 conda activate {env_folder} && ^
-pip install --no-deps psychopy && ^
+pip install -r {pip_reqs} && ^
+pip install --ignore-requires-python --no-deps psychopy && ^
 pip install psychopy_sounddevice && ^
-npm install -g typescript typescript-language-server ^
-  vscode-css-languageserver-bin ^
-  vscode-json-languageserver && ^
 conda env export -f env-export/opensesame_{version}.yaml && ^
-copy bat\rapunzel.bat {env_folder} && ^
+copy py\opensesame.py {env_folder}Lib\site-packages\ && ^
+copy py\sigmund-analyst.py {env_folder}Lib\site-packages\ && ^
 copy bat\opensesame.bat {env_folder} && ^
-copy bat\opensesamerun.bat {env_folder} && ^
-copy bat\ipython.bat {env_folder} && ^
-copy bat\qtconsole.bat {env_folder} && ^
-copy bat\psychopy.bat {env_folder} && ^
+copy bat\sigmund-analyst.bat {env_folder} && ^
 mkdir {env_folder}\share\icons && ^
 copy ico\opensesame.ico {env_folder}\share\icons && ^
-copy ico\opensesamerun.ico {env_folder}\share\icons && ^
-copy ico\rapunzel.ico {env_folder}\share\icons && ^
-copy ico\psychopy.ico {env_folder}\share\icons && ^
-copy ico\qtconsole.ico {env_folder}\share\icons && ^
-copy ico\ipython.ico {env_folder}\share\icons && ^
-copy py\opensesame.py {env_folder}Lib\site-packages\ && ^
-copy py\opensesamerun.py {env_folder}Lib\site-packages\ && ^
+copy ico\sigmund-analyst.ico {env_folder}\share\icons && ^
 copy /Y misc\qt-root.conf {env_folder}qt.conf && ^
 copy /Y misc\qt-library.conf {env_folder}Library\bin\qt.conf && ^
 copy /Y misc\kernel.json {env_folder}share\jupyter\kernels\python3\ && ^

@@ -1,11 +1,11 @@
 # OpenSesame build scripts for Windows
 
-Copyright 2020 - 2023 Sebastiaan Mathôt
+Copyright 2020 - 2025 Sebastiaan Mathôt
 
 
 ## About
 
-These scripts build Windows Anaconda environments for OpenSesame (experiment builder for the social sciences) and Rapunzel (code editor for numerical computing), and package them as `.zip` and `.exe` installers. 
+These scripts build Windows Anaconda environments for OpenSesame (experiment builder for the social sciences) and Sigmund Analyst (code editor for numerical computing), and package them as `.zip` and `.exe` installers. 
 
 - OpenSesame: <https://osdoc.cogsci.nl/>
 - Rapunzel: <https://rapunzel.cogsci.nl/>
@@ -20,17 +20,12 @@ python build.py [target] [options]
 Example:
 
 ```
-python build.py --py311 --build --frozen
+python build.py --full
 ```
-
-Target can be one of:
-
-- `--py311`
 
 Options can be:
 
 - `--build` to build the Anaconda environment from scratch
-- `--frozen` to build with fixed package versions determined by previous builds
 - `--zip` to create `.zip` archive for distribution
 - `--exe` to create `.exe` installer for distribution
 - `--clear` to clear the `conda`` environment folder before building

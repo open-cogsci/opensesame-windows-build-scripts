@@ -82,7 +82,7 @@ Section "OpenSesame" SEC01
     SetOverwrite try
     File /r "{env_folder}\*.*"
     ${{registerExtension}} "$INSTDIR\opensesame.bat" ".osexp" "OpenSesame experiment"
-    ${{registerExtension}} "$INSTDIR\rapunzel.bat" ".py" "Python script"
+    ${{registerExtension}} "$INSTDIR\sigmund-analyst.bat" ".py" "Python script"
     WriteRegStr HKCR "OpenSesame experiment\DefaultIcon" "" "$INSTDIR\share\icons\opensesame.ico,0"
     WriteRegStr HKCR "Python script\DefaultIcon" "" "$INSTDIR\share\icons\ipython.ico,0"
 SectionEnd
@@ -91,11 +91,7 @@ Section -AdditionalIcons
   WriteIniStr "$INSTDIR\${{PRODUCT_NAME}}.url" "InternetShortcut" "URL" "${{PRODUCT_WEB_SITE}}"
   CreateDirectory "$SMPROGRAMS\OpenSesame"
   CreateShortCut "$SMPROGRAMS\OpenSesame\OpenSesame.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesame.py" "$INSTDIR\share\icons\opensesame.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\OpenSesame (runtime).lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesamerun.py" "$INSTDIR\share\icons\opensesamerun.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\Rapunzel.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\opensesame.py --mode=ide" $INSTDIR\share\icons\rapunzel.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\PsychoPy.lnk" "$INSTDIR\psychopy.bat" "" "$INSTDIR\share\icons\psychopy.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\IPython.lnk" "$INSTDIR\ipython.bat" "" "$INSTDIR\share\icons\ipython.ico"
-  CreateShortCut "$SMPROGRAMS\OpenSesame\IPython (QtConsole).lnk" "$INSTDIR\qtconsole.bat" "" "$INSTDIR\share\icons\qtconsole.ico"
+  CreateShortCut "$SMPROGRAMS\OpenSesame\Sigmund Analyst.lnk" "$INSTDIR\pythonw.exe" "Lib\site-packages\sigmund-analyst.py" "$INSTDIR\share\icons\sigmund-analyst.ico"
   CreateShortCut "$SMPROGRAMS\OpenSesame\Uninstall.lnk" "$INSTDIR\uninst.exe"
 SectionEnd
 
@@ -121,11 +117,7 @@ FunctionEnd
 Section Uninstall
   SetShellVarContext all
   Delete "$SMPROGRAMS\OpenSesame\OpenSesame.lnk"
-  Delete "$SMPROGRAMS\OpenSesame\OpenSesame (runtime).lnk"
-  Delete "$SMPROGRAMS\OpenSesame\Rapunzel.lnk"
-  Delete "$SMPROGRAMS\OpenSesame\PsychoPy.lnk"
-  Delete "$SMPROGRAMS\OpenSesame\IPython.lnk"
-  Delete "$SMPROGRAMS\OpenSesame\IPython (QtConsole).lnk"
+  Delete "$SMPROGRAMS\OpenSesame\Sigmund Analyst.lnk"
   Delete "$SMPROGRAMS\OpenSesame\Uninstall.lnk"
   RMDir "$SMPROGRAMS\OpenSesame"
   RMDir /r "$INSTDIR"

@@ -1,0 +1,9 @@
+name: opensesame-41
+channels:
+- cogsci
+- conda-forge
+- anaconda
+- defaults
+dependencies:
+- python=3.13
+- pip
