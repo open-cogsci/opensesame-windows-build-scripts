@@ -4,7 +4,7 @@ conda create -p {env_folder} python=3.13 -y && ^
 conda activate {env_folder} && ^
 pip install -r {pip_reqs} && ^
 pip install --ignore-requires-python --no-deps psychopy && ^
-pip install psychopy_sounddevice && ^
+pip install psychopy_sounddevice psychopy_visionscience && ^
 conda env export -f env-export/opensesame_{version}.yaml && ^
 copy py\opensesame.py {env_folder}Lib\site-packages\ && ^
 copy py\sigmund-analyst.py {env_folder}Lib\site-packages\ && ^

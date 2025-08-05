@@ -4,6 +4,7 @@ opensesame-extension-osweb>=2.2.7.1a1
 opensesame-plugin-psychopy
 opensesame-plugin-media_player_mpy
 https://github.com/smathot/PyGaze/archive/refs/tags/release/0.8.8.tar.gz
+https://github.com/open-cogsci/opensesame-windows-build-scripts/raw/refs/heads/master/libs/expyriment-0.10.0+opensesame2-py3-none-any.whl
 # Psychopy dependencies below, manually fixed
 numpy
 scipy
