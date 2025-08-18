@@ -14,7 +14,7 @@ else:
     NSI = '--nsi' in sys.argv
     COMPRESS = '--zip' in sys.argv
 CONDA_FOLDER = r'conda'
-OS_VERSION = '4.1.0a15'
+OS_VERSION = '4.1.0'
 BUILD_VERSION = '1'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
