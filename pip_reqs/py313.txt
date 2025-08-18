@@ -46,7 +46,6 @@ astunparse
 esprima
 jedi
 pyserial
-pyparallel
 ffpyplayer
 opencv-python
 python-vlc

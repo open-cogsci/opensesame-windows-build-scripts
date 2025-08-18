@@ -15,7 +15,7 @@ else:
     COMPRESS = '--zip' in sys.argv
 CONDA_FOLDER = r'conda'
 OS_VERSION = '4.1.0'
-BUILD_VERSION = '1'
+BUILD_VERSION = '2'
 MAKENSIS = r'..\nsis-3.05\makensis.exe'
 ZIP = r'..\7zip\7za.exe'
 ENV_TARGET = CONDA_FOLDER + r'\opensesame_{version}'
